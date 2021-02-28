@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/goods_detail/goods_detail",
+    "pages/index/index",
+    "pages/join/join",
+    "pages/my/my"
+    
+  ],
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ec722e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "iconPath": "/images/join.png",
+        "selectedIconPath": "/images/join_active.png",
+        "text": "我的拼团"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "古交便民"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取当前位置，才能更精准的向您推荐优选美食哦"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<!--components/IndexTab/index_tab.wxml-->
+<view class="index_tab_container">
+  <view class="tab_top">
+    <view class="cate_tab">
+      <view class="cate_item {{type_index == '1'? 'active_cate_item' : ''}}" data-type="1" bindtap="changeType">正在拼团
+      </view>
+      <view class="cate_item {{type_index == '2'? 'active_cate_item' : ''}}" data-type="2" bindtap="changeType">积分商品
+      </view>
+      <view class="cate_item {{type_index == '3'? 'active_cate_item' : ''}}" data-type="3" bindtap="changeType">积分商家
+      </view>
+    </view>
+    <view class="countdown">仅剩 06:08:23</view>
+  </view>
+  <view class="tab_bottom">
+    <swiper class="tab_list" display-multiple-items="5" current="{{show_index}}">
+      <swiper-item wx:for="{{category_list}}" wx:key="id">
+        <view class="tab {{active_index == index? 'active_color' : ''}}" data-id="{{item.id}}" data-index="{{index}}"
+          bindtap="changeCurrent">
+          {{item.name}}
+          <view class="active_tab" wx:if="{{active_index == index}}"></view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="store_tab" wx:if="{{type_index == '3'}}">
+    <view class="store_tab_item {{sort_id == '1'? 'active_tab_item' : ''}}" data-sort_id="1" bindtap="changeSort">距离排序</view>
+    <view class="store_tab_item {{sort_id == '2'? 'active_tab_item' : ''}}" data-sort_id="2" bindtap="changeSort">综合排序</view>
+  </view>
+</view>

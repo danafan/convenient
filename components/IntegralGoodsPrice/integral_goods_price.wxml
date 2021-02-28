@@ -1,0 +1,9 @@
+<!--components/IntegralGoodsPrice/integral_goods_price.wxml-->
+<view class="integral_price_box">
+  <view class="integral_price_top">
+    <image class="money_icon" src="../../images/money_icon.png"></image>
+    <view class="integral_num">10积分</view>
+    <view class="monry_num">+5元</view>
+  </view>
+  <view class="integral_old_price">¥32</view>
+</view>

@@ -1,0 +1,11 @@
+<!--components/location_search/location_search.wxml-->
+<view class="location_search">
+  <view class="location_box">
+    <view class="location_text">古交市</view>
+    <image class="down_icon" src="../../images/down_icon.png"></image>
+  </view>
+  <view class="search_box">
+    <image class="search_icon" src="../../images/search_icon.png"></image>
+    <view class="search_text">输入商品关键字</view>
+  </view>
+</view>

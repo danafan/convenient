@@ -1,0 +1,50 @@
+<!--pages/goods_detail/goods_detail.wxml-->
+<view>
+  <!-- 轮播图 -->
+  <view class="banner_box">
+    <swiper class="swiper_box" indicator-color="#F1F2F4" indicator-active-color="#ffffff" autoplay="true"
+      interval="5000" duration="80" circular="true" bindchange="changeBanner">
+      <swiper-item wx:for="{{banner_list}}" wx:key="*this">
+        <image class="food_icon" mode="aspectFill" src="{{item}}" data-index="{{index}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="indicator_box">{{current_index+1}}/{{banner_list.length}}</view>
+  </view>
+  <!-- 商品名、价格 -->
+  <view class="goods_np common_back">
+    <view class="goods_name_box">
+      <view class="goods_name">这是商品名称这是商品名称这是商品名称这是商品名称</view>
+      <view class="time_box">
+        <view>距结束</view>
+        <view>08:32:24</view>
+      </view>
+    </view>
+    <view class="goods_price_box">
+      <!-- 拼团抢 -->
+      <view class="group_goods" wx:if="{{goods_type == '1'}}">
+        <view class="group_goods_top">
+          <view class="small_text money_icon">¥</view>
+          <view class="big_text money_icon">288</view>
+          <view class="small_text old_price">¥322</view>
+          <view class="group_num">2人拼团</view>
+        </view>
+        <view class="group_goods_bottom">
+          <view class="small_text text_blod">销量</view>
+          <view class="small_text">已售</view>
+          <view class="small_text money_icon num">23</view>
+          <view class="small_text">件，</view>
+          <view class="small_text">仅剩</view>
+          <view class="small_text money_icon num">2</view>
+          <view class="small_text">件</view>
+        </view>
+      </view>
+      <!-- 积分商品 -->
+      <integral_goods_price wx:if="{{goods_type == '2'}}"/>
+      <!-- 分享 -->
+      <view class="share_box">
+        <image class="share_icon" src="../../images/share_icon.png"></image>
+        <view class="small_text">分享</view>
+      </view>
+    </view>
+  </view>
+</view>

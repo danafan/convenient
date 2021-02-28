@@ -1,0 +1,32 @@
+<!--components/IndexGoodsItem/index_goods_item.wxml-->
+<view class="index_goods_item">
+  <view class="img_box">
+    <!-- 主图 -->
+    <image class="goods_img" mode="aspectFill" src="{{goods_item.goods_img}}"></image>
+    <!-- 左上角标签 -->
+    <view class="tag" wx:if="{{goods_item.tag_text != ''}}">{{goods_item.tag_text}}</view>
+    <!-- 遮罩层 -->
+    <view class="goods_img model" wx:if="{{goods_item.has_time || goods_item.take_up}}">
+      <view class="model_button">{{goods_item.has_time?'时间已到':'全部抢完'}}</view>
+    </view>
+  </view>
+  <view class="goods_padding">
+    <!-- 商品名称 -->
+    <view class="goods_name">{{goods_item.goods_name}}</view>
+    <!-- 拼团商品 -->
+    <view class="group_price_box" wx:if="{{goods_item.goods_type == '1'}}">
+      <view>
+        <view class="group_price_text">
+          <view class="group_price_small">{{goods_item.group_num}}人团¥</view>
+          <view class="group_price_big">{{goods_item.group_price}}</view>
+        </view>
+        <view class="group_old_price">单买价:¥{{goods_item.old_price}}</view>
+      </view>
+      <view class="group_but {{goods_item.has_time? 'un_group_but' : ''}}" wx:if="{{!goods_item.take_up}}">去拼团</view>
+      <view class="group_but un_group_but" wx:else>已抢完</view>
+    </view>
+    <!-- 积分商品 -->
+    <integral_goods_price wx:if="{{goods_item.goods_type == '2'}}"/>
+  </view>
+
+</view>

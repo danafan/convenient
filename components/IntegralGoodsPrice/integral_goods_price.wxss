@@ -1,0 +1,34 @@
+/* components/IntegralGoodsPrice/integral_goods_price.wxss */
+/* 积分商品 */
+.integral_price_box{
+  margin-top: 15rpx;
+}
+.integral_price_top{
+  display: flex;
+  align-items: center;
+}
+.money_icon{
+  width: 35rpx;
+  height: 35rpx;
+}
+.integral_num{
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  font-size: 28rpx;
+  color:#CF3F5A;
+}
+.monry_num{
+  background-color: #CF3F5A;
+  height: 36rpx;
+  line-height: 36rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  font-size: 28rpx;
+  color:#fff;
+}
+.integral_old_price{
+  margin-top: 8rpx;
+  text-decoration:line-through;
+  font-size: 24rpx;
+  color:#8a8a8a;
+}

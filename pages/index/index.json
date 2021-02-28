@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "location_search": "../../components/LocationSearch/location_search",
+    "index_tab": "../../components/IndexTab/index_tab",
+    "index_goods_item": "../../components/IndexGoodsItem/index_goods_item",
+    "index_store_item": "../../components/IndexStoreItem/index_store_item"
+  }
+}

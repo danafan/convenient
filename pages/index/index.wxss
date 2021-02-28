@@ -1,0 +1,52 @@
+/**index.wxss**/
+.top_container {
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+
+.banner_box {
+  height: 372rpx;
+}
+
+.food_icon {
+  border-radius: 10rpx;
+  width: 100%;
+  height: 100%;
+}
+.page_title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 108rpx;
+  color: #ff5858;
+  font-size: 30rpx;
+}
+.announcement_box{
+  padding-left: 8rpx;
+  border-radius: 10rpx;
+  background-color: #FCE9C3;
+  display: flex;
+  align-items: center;
+  height: 58rpx;
+}
+.announcement_icon{
+  margin-right: 8rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.announcement_text{
+  font-size: 28rpx;
+}
+/* 商品列表 */
+.goods_list{
+  padding: 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* 商家列表 */
+.store_list{
+  /* padding-left: 30rpx;
+  padding-right: 30rpx; */
+}
+

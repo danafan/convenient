@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top_container">
+    <!-- 地址和搜索框 -->
+    <location_search />
+    <!-- 轮播图 -->
+    <swiper class="banner_box" indicator-dots="true" indicator-color="#F1F2F4" indicator-active-color="#ffffff"
+      autoplay="true" interval="5000" duration="80" circular="true">
+      <swiper-item wx:for="{{banner_list}}" wx:key="*this">
+        <image class="food_icon" mode="aspectFill" src="{{item}}" data-index="{{index}}"></image>
+      </swiper-item>
+    </swiper>
+    <!-- 拼团抢购 -->
+    <view class="page_title">-- 拼 团 抢 购 --</view>
+    <!-- 公告 -->
+    <view class="announcement_box">
+      <image class="announcement_icon" src="../../images/announcement_icon.png"></image>
+      <view class="announcement_text">您有130个积分即将到期，请尽快使用！</view>
+    </view>
+  </view>
+  <!-- 中间导航 -->
+  <index_tab bind:onEmit="checkQuery" />
+  <!-- 商家列表 -->
+  <view class="store_list" wx:if="{{list_req.type_index == '3'}}">
+    <index_store_item wx:for="{{store_list}}" wx:key="id" store_item="{{item}}"/>
+  </view>
+  <!-- 商品列表 -->
+  <view class="goods_list" wx:else>
+    <index_goods_item wx:for="{{goods_list}}" wx:key="goods_id" goods_item="{{item}}"/>
+  </view>
+  
+</view>

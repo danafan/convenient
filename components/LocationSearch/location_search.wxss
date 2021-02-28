@@ -1,0 +1,36 @@
+/* components/location_search/location_search.wxss */
+.location_search{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+}
+.location_box{
+  width: 150rpx;
+  display: flex;
+  align-items: center;
+}
+.location_text{
+  margin-right: 10rpx;
+  font-size: 26rpx;
+}
+.down_icon{
+  width: 28rpx;
+  height: 28rpx;
+}
+.search_box{
+  border-radius: 29rpx;
+  background-color: #E5E6E7;
+  flex:1;
+  height: 58rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 10rpx;
+}
+.search_icon{
+  margin-right: 10rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.search_text{
+  font-size: 26rpx;
+}

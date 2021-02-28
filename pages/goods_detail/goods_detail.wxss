@@ -1,0 +1,129 @@
+/* pages/goods_detail/goods_detail.wxss */
+/* banner */
+.banner_box{
+  position: relative;
+}
+.swiper_box {
+  height: 750rpx;
+  padding: 15rpx;
+}
+
+.food_icon {
+  border-radius: 10rpx;
+  width: 100%;
+  height: 720rpx;
+}
+.indicator_box{
+  position: absolute;
+  right: 30rpx;
+  bottom: 60rpx;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 52rpx;
+  text-align: center;
+  height: 52rpx;
+  line-height: 52rpx;
+  font-size: 24rpx;
+}
+/* 商品名称和价格 */
+.goods_np{
+  position: relative;
+  top: -30rpx;
+}
+.common_back{
+  background-color: #fff;
+  padding: 30rpx 15rpx;
+}
+/* 商品名称 */
+.goods_name_box{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.goods_name{
+  flex:1;
+  font-size: 32rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.time_box{
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+  background-color: #FBD63C;
+  width: 206rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+}
+/* 价格 */
+.goods_price_box{
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.group_goods{
+  flex:1;
+}
+.group_goods_top{
+  display: flex;
+  align-items: flex-end;
+}
+.small_text{
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.big_text{
+  margin-right: 15rpx;
+  position: relative;
+  bottom: -5rpx;
+  font-size: 42rpx;
+}
+.money_icon{
+  color: #ff5858;
+}
+.old_price{
+  margin-right: 15rpx;
+  text-decoration:line-through;
+}
+.group_num{
+  position: relative;
+  bottom: 6rpx;
+  border-radius: 5rpx;
+  background-color: #FBEAE9;
+  width: 90rpx;
+  text-align: center;
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 22rpx;
+}
+.group_goods_bottom{
+  margin-top: 10rpx;
+  display: flex;
+}
+.text_blod{
+  margin-right: 15rpx;
+  color: #333;
+  font-weight: 600;
+}
+.num{
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
+.share_box{
+  width: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.share_icon{
+  width: 46rpx;
+  height: 46rpx;
+}

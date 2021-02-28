@@ -1,0 +1,27 @@
+<!--components/IndexStoreItem/index_store_item.wxml-->
+<view class="index_store_item">
+  <image class="store_img" src="https://img.ivsky.com/img/tupian/t/202002/14/xican_meishi-001.jpg"></image>
+  <view class="store_content">
+    <view class="content_top">
+      <view class="top_left">
+        <view class="store_state {{store_item.store_state == '2'?'un_store_state':''}}">{{store_item.store_state == '1'?'营业中':'已打烊'}}</view>
+        <view class="store_name">胖阿姨小店</view>
+        <image class="right_icon" src="../../images/down_icon.png"></image>
+      </view>
+      <view class="top_right">2.3km</view>
+    </view>
+    <view class="content_center">
+      <view class="store_cate">西式快餐</view>
+      <view>长风街</view>
+    </view>
+    <view class="content_top">
+      <view class="top_left">
+        <image class="location_icon" src="../../images/location_icon.png"></image>
+        <view class="location_text">阿上课的很快就阿斯顿很快就阿斯顿阿斯顿</view>
+      </view>
+      <view class="top_right">
+        <image class="navigation_icon" src="../../images/navigation_icon.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

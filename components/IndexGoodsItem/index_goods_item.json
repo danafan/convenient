@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "integral_goods_price": "../../components/IntegralGoodsPrice/integral_goods_price"
+  }
+}
