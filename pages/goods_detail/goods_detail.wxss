@@ -127,3 +127,78 @@
   width: 46rpx;
   height: 46rpx;
 }
+/* 规格 */
+.small_back{
+  margin-bottom: 15rpx;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+}
+.small_back_label{
+  margin-right: 20rpx;
+  color:#8a8a8a;
+}
+.small_back_val{
+  display: flex;
+  align-items: center;
+}
+.pei_item{
+  margin-right: 12rpx;
+  display: flex;
+  align-items: center;
+}
+.dui_icon{
+  margin-right: 8rpx;
+  width: 28rpx;
+  height: 28rpx;
+}
+/* 规则说明 */
+.desc_title{
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+  color:#8a8a8a;
+}
+.desc_item{
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: flex-start;
+  font-size: 26rpx;
+}
+.dian{
+  position: relative;
+  top:15rpx;
+  margin-right: 8rpx;
+  border-radius: 50%;
+  background-color: #8a8a8a;
+  width: 6rpx;
+  height: 6rpx;
+}
+.desc_text{
+  flex:1;
+}
+/* 参团和评价 */
+.title_list{
+  margin-top: 15rpx;
+  background-color: #fff;
+}
+.title_box{
+  border-bottom: 1rpx solid #8a8a8a;
+  display: flex;
+  height: 72rpx;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+.title_box_left{
+  font-size: 30rpx;
+}
+.title_box_right{
+  display: flex;
+  align-items: center;
+}
+.down_icon{
+  width: 28rpx;
+  height: 28rpx;
+  transform: rotate(-90deg);
+}

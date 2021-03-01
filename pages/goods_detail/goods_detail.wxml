@@ -47,4 +47,45 @@
       </view>
     </view>
   </view>
+  <!-- 规格 -->
+  <view class="small_back common_back">
+    <view class="small_back_label">规格</view>
+    <view class="small_back_val">1件</view>
+  </view>
+  <!-- 配送 -->
+  <view class="small_back common_back">
+    <view class="small_back_label">配送</view>
+    <view class="small_back_val">
+      <view class="pei_item">
+        <image class="dui_icon" src="../../images/dui_icon.png"></image>
+        <view>商家配送</view>
+      </view>
+      <view class="pei_item">
+        <image class="dui_icon" src="../../images/dui_icon.png"></image>
+        <view>到店自提</view>
+      </view>
+    </view>
+  </view>
+  <!-- 规则说明 -->
+  <view class="common_back">
+    <view class="desc_title">规则说明</view>
+    <view class="desc_item">
+      <view class="dian"></view>
+      <view class="desc_text">撒打算考得好阿斯顿就卡设计的贺卡结束的阿斯顿很快就啊哈是的阿斯顿很快就啊啥的空间啊哈是的</view>
+    </view>
+    <view class="desc_item">
+      <view class="dian"></view>
+      <view class="desc_text">撒打算考得好阿斯顿就卡设计的贺卡结束</view>
+    </view>
+  </view>
+  <!-- 拼团列表 -->
+  <view class="title_list">
+    <view class="title_box">
+      <view class="title_box_left">6人在拼团，可直接参团</view>
+      <view class="title_box_right">
+        <view class="small_text">查看更多</view>
+        <image class="down_icon" src="../../images/down_icon.png"></image>
+      </view>
+    </view>
+  </view>
 </view>
