@@ -1,0 +1,8 @@
+<!--components/CommentItem/comment_item.wxml-->
+<view class="comments_item_container">
+  <view class="user_info">
+    <image class="user_img" mode="aspectFill" src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+    <view class="user_name">彪子</view>
+  </view>
+  <view class="comment_content">这是评论内容，这个商品贼好吃，下次还会来，哈哈哈哈哈哈哈，下次还会来！！！</view>
+</view>

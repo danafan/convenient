@@ -1,0 +1,16 @@
+<!--components/GroupPgaeItem/group_page_item.wxml-->
+<view class="group_page_item_container">
+  <view class="user_info">
+    <image class="user_img" mode="aspectFill" src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+    <view class="user_name">雷雷</view>
+  </view>
+  <view class="group_info">
+    <view class="group_info_left">
+      <view class="info_text">还差
+        <text class="num_red">1人</text>
+        拼成</view>
+      <view>还剩 23:33:45</view>
+    </view>
+    <view class="group_button">去参团</view>
+  </view>
+</view>

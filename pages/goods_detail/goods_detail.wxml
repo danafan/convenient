@@ -39,7 +39,7 @@
         </view>
       </view>
       <!-- 积分商品 -->
-      <integral_goods_price wx:if="{{goods_type == '2'}}"/>
+      <integral_goods_price wx:if="{{goods_type == '2'}}" />
       <!-- 分享 -->
       <view class="share_box">
         <image class="share_icon" src="../../images/share_icon.png"></image>
@@ -82,10 +82,31 @@
   <view class="title_list">
     <view class="title_box">
       <view class="title_box_left">6人在拼团，可直接参团</view>
+    </view>
+    <view class="group_item_box">
+      <swiper class="group_swiper_box" vertical="true" autoplay="true" interval="5000" duration="80" circular="true">
+        <swiper-item wx:for="{{3}}" wx:key="*this">
+          <group_page_item />
+          <group_page_item />
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <!-- 评论列表 -->
+  <view class="title_list">
+    <view class="title_box">
+      <view class="title_box_left">商品评价（3928）</view>
       <view class="title_box_right">
         <view class="small_text">查看更多</view>
         <image class="down_icon" src="../../images/down_icon.png"></image>
       </view>
     </view>
+    <comment_cate comment_cate_list="{{comment_cate_list}}"/>
+    <view class="comment_list">
+      <comment_item/>
+      <comment_item/>
+      <comment_item/>
+    </view>
+    
   </view>
 </view>

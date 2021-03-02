@@ -1,0 +1,47 @@
+/* components/GroupPgaeItem/group_page_item.wxss */
+.group_page_item_container{
+  border-bottom: 1rpx solid #F1F2F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120rpx;
+}
+.user_info{
+  display: flex;
+  align-items: center;
+}
+.user_img{
+  margin-right: 10rpx;
+  border-radius: 50%;
+  width: 78rpx;
+  height: 78rpx;
+}
+.user_name{
+  font-size: 30rpx;
+}
+.group_info{
+  display: flex;
+  align-items: center;
+}
+.group_info_left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.num_red{
+  color: #E62932;
+}
+.group_button{
+  margin-left: 15rpx;
+  background-color: #E62932;
+  border-radius: 24rpx;
+  width: 136rpx;
+  text-align: center;
+  height: 46rpx;
+  line-height: 46rpx;
+  font-size: 28rpx;
+  color: #fff;
+}

@@ -1,0 +1,7 @@
+<!--components/CommentCate/comment_cate.wxml-->
+<view class="comment_cate_container">
+  <view class="comment_item {{item.is_goods?'is_good':''}}" wx:for="{{comment_cate_list}}" wx:key="id">
+    <image wx:if="{{item.is_goods}}" class="goods_icon" src="../../images/goods_icon.png"></image>
+    <text>{{item.name}}({{item.number}})</text>
+  </view>
+</view>

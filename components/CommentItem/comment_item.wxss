@@ -1,0 +1,28 @@
+/* components/CommentItem/comment_item.wxss */
+.comments_item_container {
+  border-bottom: 1px solid #F1F2F4;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+}
+
+.user_info {
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.user_img {
+  margin-right: 15rpx;
+  border-radius: 50%;
+  width: 52rpx;
+  height: 52rpx;
+}
+
+.user_name {
+  font-size: 28rpx;
+}
+
+.comment_content {
+  font-size: 28rpx;
+  color: #8a8a8a;
+}

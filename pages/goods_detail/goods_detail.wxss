@@ -32,7 +32,7 @@
 }
 .common_back{
   background-color: #fff;
-  padding: 30rpx 15rpx;
+  padding: 30rpx 25rpx;
 }
 /* 商品名称 */
 .goods_name_box{
@@ -182,13 +182,13 @@
   background-color: #fff;
 }
 .title_box{
-  border-bottom: 1rpx solid #8a8a8a;
+  border-bottom: 1rpx solid #F1F2F4;
   display: flex;
   height: 72rpx;
   align-items: center;
   justify-content: space-between;
-  padding-left: 15rpx;
-  padding-right: 15rpx;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
 }
 .title_box_left{
   font-size: 30rpx;
@@ -201,4 +201,18 @@
   width: 28rpx;
   height: 28rpx;
   transform: rotate(-90deg);
+}
+/* 拼团列表轮播图 */
+.group_item_box{
+  height: 240rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.group_swiper_box{
+  height: 240rpx;
+}
+/* 评论列表 */
+.comment_list{
+  padding-left: 25rpx;
+  padding-right: 25rpx;
 }

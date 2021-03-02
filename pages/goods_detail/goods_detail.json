@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "integral_goods_price": "../../components/IntegralGoodsPrice/integral_goods_price"
+    "integral_goods_price": "../../components/IntegralGoodsPrice/integral_goods_price",
+    "group_page_item": "../../components/GroupPageItem/group_page_item",
+    "comment_cate": "../../components/CommentCate/comment_cate",
+    "comment_item": "../../components/CommentItem/comment_item"
   }
 }

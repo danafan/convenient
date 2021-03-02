@@ -1,0 +1,26 @@
+/* components/CommentCate/comment_cate.wxss */
+.comment_cate_container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25rpx 25rpx 0 25rpx;
+}
+.comment_item{
+  margin-right: 25rpx;
+  margin-bottom: 25rpx;
+  background-color: #FAEDE9;
+  border-radius: 10rpx;
+  display: flex;
+  height: 58rpx;
+  align-items: center;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  font-size: 26rpx;
+}
+.is_good{
+  background-color: #D0FAC3;
+}
+.goods_icon{
+  margin-right: 8rpx;
+  width: 24rpx;
+  height: 24rpx;
+}
