@@ -25,6 +25,7 @@ Page({
       name:'哇哈哈哈',
       number:"565"
     }],                 //评论标签列表
+    show_modal:false,   //是否显示弹框
   },
   onLoad: function (options) {
     let goods_type = options.goods_type;
@@ -44,5 +45,23 @@ Page({
     wx.navigateTo({
       url: '/pages/comment_list/comment_list',
     });
+  },
+  //点击购买
+  openModal(){
+    this.setData({
+      show_modal:true
+    })
+  },
+  //确认购买
+  sureOrder(){
+    wx.navigateTo({
+      url: '/pages/sure_order/sure_order',
+    });
+  },
+  //关闭弹框
+  closeModal(){
+    this.setData({
+      show_modal:false
+    })
   }
 })

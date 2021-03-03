@@ -21,11 +21,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    //首页
+    //跳转首页
     goIndex(){
       wx.switchTab({
         url: '/pages/index/index',
       });
+    },
+    //团购和积分购买
+    buyGoods(){
+      this.triggerEvent('onEmit');
     }
   }
 })

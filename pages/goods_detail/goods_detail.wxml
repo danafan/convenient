@@ -101,13 +101,13 @@
         <image class="down_icon" src="../../images/down_icon.png"></image>
       </view>
     </view>
-    <comment_cate comment_cate_list="{{comment_cate_list}}"/>
+    <comment_cate comment_cate_list="{{comment_cate_list}}" />
     <view class="comment_list">
-      <comment_item/>
-      <comment_item/>
-      <comment_item/>
+      <comment_item />
+      <comment_item />
+      <comment_item />
     </view>
-    
+
   </view>
   <!-- 商品详情 -->
   <view class="title_list">
@@ -115,11 +115,45 @@
       <view class="title_box_left">商品详情</view>
     </view>
     <view class="goods_img_list">
-      <image class="goods_img" mode="widthFix" src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg" ></image>
-      <image class="goods_img" mode="widthFix" src="https://scpic3.chinaz.net/Files/pic/pic9/202102/apic31073_s.jpg" ></image>
-      <image class="goods_img" mode="widthFix" src="https://img.ivsky.com/img/tupian/t/202002/14/xican_meishi-001.jpg" ></image>
+      <image class="goods_img" mode="widthFix" src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg">
+      </image>
+      <image class="goods_img" mode="widthFix" src="https://scpic3.chinaz.net/Files/pic/pic9/202102/apic31073_s.jpg">
+      </image>
+      <image class="goods_img" mode="widthFix" src="https://img.ivsky.com/img/tupian/t/202002/14/xican_meishi-001.jpg">
+      </image>
     </view>
   </view>
   <!-- 底部按钮 -->
-  <detail_bottom goods_type="{{goods_type}}"/>
+  <detail_bottom goods_type="{{goods_type}}" bind:onEmit="openModal"/>
+  <!-- 积分商品弹框 -->
+  <view class="modal_box" wx:if="{{show_modal}}">
+    <view class="modal_content">
+      <view class="content_box">
+        <view class="content_top">
+          <view class="goods_content">
+            <image class="goods_image" mode="aspectFill"
+              src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+            <view class="goods_info">
+              <view class="goods_price_content">
+                <view class="big_price">10</view>
+                <view class="small_label">积分</view>
+                <view class="add_price">+5元</view>
+              </view>
+              <view class="inventory">库存84件</view>
+            </view>
+          </view>
+          <image class="close_icon" src="../../images/close_icon.png" bindtap="closeModal"></image>
+        </view>
+        <view class="number_box">
+          <view class="inventory">购买数量</view>
+          <view class="change_box">
+            <view class="change_but">-</view>
+            <view class="number_val">123</view>
+            <view class="change_but">+</view>
+          </view>
+        </view>
+      </view>
+      <view class="confirm_but" bindtap="sureOrder">确认</view>
+    </view>
+  </view>
 </view>

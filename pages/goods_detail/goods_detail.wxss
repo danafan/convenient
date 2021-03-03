@@ -223,3 +223,117 @@
 .goods_img{
   width: 100%;
 }
+/* 弹框 */
+.modal_box{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.modal_content{
+  width: 100%;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  background-color: #fff;
+}
+.content_box{
+  padding: 25rpx;
+}
+.content_top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.goods_content{
+  display: flex;
+  align-items: center;
+}
+.goods_image{
+  margin-right: 20rpx;
+  border-radius: 8rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+.goods_info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.goods_price_content{
+  margin-bottom: 8rpx;
+  height: 46rpx;
+  display: flex;
+  align-items: flex-end;
+}
+.big_price{
+  position: relative;
+  top: 5rpx;
+  font-size: 38rpx;
+  color: #DE425F;
+  font-weight: 600;
+}
+.small_label{
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  font-size: 26rpx;
+  color: #DE425F;
+}
+.add_price{
+  background-color: #DE425F;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+.inventory{
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.close_icon{
+  width: 24rpx;
+  height: 24rpx;
+}
+/* 购买数量 */
+.number_box{
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.change_box{
+  border:1rpx solid #F1F2F4;
+  display: flex;
+}
+.change_but{
+  background-color: #F1F2F4;
+  width: 60rpx;
+  text-align: center;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 30rpx;
+}
+.number_val{
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+}
+.confirm_but{
+  background-color: #E6303A;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  color:#fff;
+}

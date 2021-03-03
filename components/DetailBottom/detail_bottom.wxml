@@ -15,12 +15,12 @@
     </view>
   </view>
   <!-- 团购商品 -->
-  <view class="button_box" wx:if="{{goods_type == '1'}}">
+  <view class="button_box" wx:if="{{goods_type == '1'}}" bindtap="buyGoods">
     <view>¥34</view>
     <view>去团购</view>
   </view>
   <!-- 积分商品 -->
-  <view class="button_box" wx:if="{{goods_type == '2'}}">
+  <view class="button_box" wx:if="{{goods_type == '2'}}" bindtap="buyGoods">
     <view>立即兑换</view>
   </view>
   <!-- 商家入驻 -->
