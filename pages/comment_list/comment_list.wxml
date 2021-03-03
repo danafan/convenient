@@ -1,0 +1,10 @@
+<!--pages/comment_list/comment_list.wxml-->
+<view class="comment_list_container">
+  <comment_cate comment_cate_list="{{comment_cate_list}}"/>
+  <view class="comment_list">
+    <comment_item/>
+    <comment_item/>
+    <comment_item/>
+    <comment_item/>
+  </view>
+</view>

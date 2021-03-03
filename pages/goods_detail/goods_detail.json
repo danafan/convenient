@@ -1,8 +1,10 @@
 {
+  "navigationBarTitleText": "商品详情",
   "usingComponents": {
     "integral_goods_price": "../../components/IntegralGoodsPrice/integral_goods_price",
     "group_page_item": "../../components/GroupPageItem/group_page_item",
     "comment_cate": "../../components/CommentCate/comment_cate",
-    "comment_item": "../../components/CommentItem/comment_item"
+    "comment_item": "../../components/CommentItem/comment_item",
+    "detail_bottom": "../../components/DetailBottom/detail_bottom"
   }
 }

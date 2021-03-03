@@ -1,0 +1,8 @@
+/* pages/comment_list/comment_list.wxss */
+page{
+  background-color: #fff;
+}
+.comment_list{
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}

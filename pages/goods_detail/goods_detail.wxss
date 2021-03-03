@@ -1,4 +1,7 @@
 /* pages/goods_detail/goods_detail.wxss */
+.goods_detail_container{
+  padding-bottom: 97rpx;
+}
 /* banner */
 .banner_box{
   position: relative;
@@ -215,4 +218,8 @@
 .comment_list{
   padding-left: 25rpx;
   padding-right: 25rpx;
+}
+/* 详情图片 */
+.goods_img{
+  width: 100%;
 }

@@ -1,5 +1,5 @@
 <!--pages/goods_detail/goods_detail.wxml-->
-<view>
+<view class="goods_detail_container">
   <!-- 轮播图 -->
   <view class="banner_box">
     <swiper class="swiper_box" indicator-color="#F1F2F4" indicator-active-color="#ffffff" autoplay="true"
@@ -14,7 +14,7 @@
   <view class="goods_np common_back">
     <view class="goods_name_box">
       <view class="goods_name">这是商品名称这是商品名称这是商品名称这是商品名称</view>
-      <view class="time_box">
+      <view class="time_box" wx:if="{{goods_type == '1'}}">
         <view>距结束</view>
         <view>08:32:24</view>
       </view>
@@ -79,7 +79,7 @@
     </view>
   </view>
   <!-- 拼团列表 -->
-  <view class="title_list">
+  <view class="title_list" wx:if="{{goods_type == '1'}}">
     <view class="title_box">
       <view class="title_box_left">6人在拼团，可直接参团</view>
     </view>
@@ -96,7 +96,7 @@
   <view class="title_list">
     <view class="title_box">
       <view class="title_box_left">商品评价（3928）</view>
-      <view class="title_box_right">
+      <view class="title_box_right" bindtap="goCommentList">
         <view class="small_text">查看更多</view>
         <image class="down_icon" src="../../images/down_icon.png"></image>
       </view>
@@ -109,4 +109,17 @@
     </view>
     
   </view>
+  <!-- 商品详情 -->
+  <view class="title_list">
+    <view class="title_box">
+      <view class="title_box_left">商品详情</view>
+    </view>
+    <view class="goods_img_list">
+      <image class="goods_img" mode="widthFix" src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg" ></image>
+      <image class="goods_img" mode="widthFix" src="https://scpic3.chinaz.net/Files/pic/pic9/202102/apic31073_s.jpg" ></image>
+      <image class="goods_img" mode="widthFix" src="https://img.ivsky.com/img/tupian/t/202002/14/xican_meishi-001.jpg" ></image>
+    </view>
+  </view>
+  <!-- 底部按钮 -->
+  <detail_bottom goods_type="{{goods_type}}"/>
 </view>

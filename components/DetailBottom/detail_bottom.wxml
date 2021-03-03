@@ -1,0 +1,30 @@
+<!--components/DetailBottom/detail_bottom.wxml-->
+<view class="container">
+  <view class="route_box">
+    <view class="route_item" bindtap="goIndex">
+      <image class="route_icon" src="../../images/index.png"></image>
+      <view class="route_text">首页</view>
+    </view>
+    <view class="route_item" wx:if="{{goods_type == '1' || goods_type == '2'}}">
+      <image class="route_icon" src="../../images/service_icon.png"></image>
+      <view class="route_text">客服</view>
+    </view>
+    <view class="route_item" wx:if="{{goods_type == '2' || goods_type == '3'}}">
+      <image class="route_icon" src="../../images/collection_icon.png"></image>
+      <view class="route_text">收藏</view>
+    </view>
+  </view>
+  <!-- 团购商品 -->
+  <view class="button_box" wx:if="{{goods_type == '1'}}">
+    <view>¥34</view>
+    <view>去团购</view>
+  </view>
+  <!-- 积分商品 -->
+  <view class="button_box" wx:if="{{goods_type == '2'}}">
+    <view>立即兑换</view>
+  </view>
+  <!-- 商家入驻 -->
+  <view class="button_box" wx:if="{{goods_type == '3'}}">
+    <view>商家入驻</view>
+  </view>
+</view>

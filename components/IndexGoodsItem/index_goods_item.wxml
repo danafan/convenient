@@ -1,5 +1,5 @@
 <!--components/IndexGoodsItem/index_goods_item.wxml-->
-<view class="index_goods_item">
+<view class="index_goods_item" bindtap="goodsDetail">
   <view class="img_box">
     <!-- 主图 -->
     <image class="goods_img" mode="aspectFill" src="{{goods_item.goods_img}}"></image>

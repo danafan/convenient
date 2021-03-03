@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/goods_detail/goods_detail",
     "pages/index/index",
+    "pages/goods_detail/goods_detail",
     "pages/join/join",
-    "pages/my/my"
-    
+    "pages/my/my",
+    "pages/comment_list/comment_list"
   ],
   "tabBar": {
     "color": "#8a8a8a",
