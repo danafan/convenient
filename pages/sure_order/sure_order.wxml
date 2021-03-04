@@ -2,18 +2,99 @@
 <view class="sure_order_container">
   <view class="distribution_box">
     <view class="distribution_label">配送方式</view>
-    <view class="distribution_item {{way_id=='1'?'active_distribution_item':''}}" data-way_id="1" bindtap="checkWay">商家配送</view>
-    <view class="distribution_item {{way_id=='2'?'active_distribution_item':''}}" data-way_id="2" bindtap="checkWay">到店自提</view>
+    <view class="distribution_item {{way_id=='1'?'active_distribution_item':''}}" data-way_id="1" bindtap="checkWay">
+      商家配送</view>
+    <view class="distribution_item {{way_id=='2'?'active_distribution_item':''}}" data-way_id="2" bindtap="checkWay">
+      到店自提</view>
   </view>
   <!-- 地址信息 -->
   <view class="address_box">
     <!-- 商家配送 -->
-    <view class="way_store">
-
+    <view class="way_store display_style" wx:if="{{way_id == '1'}}">
+      <image class="location_icon" src="../../images/location_icon.png"></image>
+      <view class="address_content">
+        <view class="display_style">
+          <view class="user_name">彪子</view>
+          <view>13067882312</view>
+        </view>
+        <view class="address_text line_clamp">这是详细地址客户反馈撒结婚的饭卡的还是付款方式</view>
+      </view>
+      <image class="down_icon down" src="../../images/down_icon.png"></image>
+    </view>
+    <!-- 用户自提 -->
+    <view class="user_lift" wx:if="{{way_id == '2'}}">
+      <view class="lift_item display_style bottom_line_solid">
+        <view class="lift_left">
+          <view class="lift_label">自提点</view>
+        </view>
+        <view class="display_style">
+          <view class="lift_val">晋商国际</view>
+          <image class="down_icon down" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="lift_item bottom_line_solid">
+        <view class="lift_left">
+          <view class="lift_label">提货时间</view>
+          <view class="required">*</view>
+        </view>
+        <view class="lift_right">
+          <view class="lift_val">请选择</view>
+          <image class="down_icon down" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="lift_item">
+        <view class="lift_left">
+          <view class="lift_label">提货手机</view>
+          <view class="required">*</view>
+          <view class="lift_label">+86</view>
+          <image class="down" src="../../images/down_icon.png"></image>
+        </view>
+        <view class="lift_right">
+          <input class="phone" type="number" bindinput="changePhone" placeholder="请填写" />
+        </view>
+      </view>
     </view>
     <!-- 底部的虚线 -->
-    <view class="bottom_line">
+    <view class="display_style">
       <view class="line_item {{index%2 == 1?'ji_line_item':''}}" wx:for="{{9}}" wx:key="*this"></view>
+    </view>
+  </view>
+  <!-- 购物清单 -->
+  <view class="listing_container address_box">
+    <view class="lift_left">
+      <image class="listing_icon" src="../../images/listing_icon.png"></image>
+      <view class="title_text">购物清单</view>
+    </view>
+    <view class="display_style goods_container bottom_line_solid">
+      <image class="goods_img" mode="aspectFill"
+        src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+      <view class="goods_content">
+        <view class="display_style flex_start">
+          <view class="line_clamp">小白鞋洗鞋神器小白鞋洗鞋神器小白鞋洗鞋神器</view>
+          <view class="goods_num">x1</view>
+        </view>
+        <view class="goods_price">
+          <view>
+            <text>10</text>
+            <text class="margin_lr">积分</text>
+            <text>+</text>
+          </view>
+          <text class="margin_lr">¥</text>
+          <text class="price_text">5.00</text>
+        </view>
+      </view>
+    </view>
+    <!-- 买家留言 -->
+    <view class="display_style flex_start">
+      <view class="remark_label">买家留言</view>
+      <textarea class="remark_input" placeholder="给卖家留言:(50字以内)" maxlength="50" bindinput="changeRemark" />
+      </view>
+    <!-- 合计 -->
+    <view class="total_box">
+      <text>共1件商品</text>
+      <text class="total_label">合计：</text>
+      <text class="margin_lr color_price">¥</text>
+      <text class="total_price_text color_price">5.00</text>
     </view>
   </view>
 </view>
