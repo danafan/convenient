@@ -1,1 +1,50 @@
 /* pages/sure_order/sure_order.wxss */
+.distribution_box{
+  background-color: #fff;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.distribution_label{
+  margin-right: 25rpx;
+  font-size: 30rpx;
+}
+.distribution_item{
+  margin-right: 15rpx;
+  border:1rpx solid #8a8a8a;
+  border-radius: 8rpx;
+  width:130rpx;
+  text-align: center;
+  height: 58rpx;
+  line-height: 58rpx;
+  font-size: 28rpx;
+  color: #8a8a8a;
+}
+.active_distribution_item{
+  border:1rpx solid #C91D38;
+  color: #C91D38;
+}
+/* 地址信息 */
+.address_box{
+  margin-top: 10rpx;
+  background-color: #fff;
+}
+/* 商家配送 */
+.way_store{
+  height: 100rpx;
+}
+/* 底部虚线 */
+.bottom_line{
+  display: flex;
+  justify-content: space-between;
+}
+.line_item{
+  background-color: #C91D38;
+  width: 46rpx;
+  height: 2rpx;
+}
+.ji_line_item{
+  background-color: #2E81B2;
+}

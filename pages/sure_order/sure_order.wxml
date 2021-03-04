@@ -1,2 +1,19 @@
 <!--pages/sure_order/sure_order.wxml-->
-<text>pages/sure_order/sure_order.wxml</text>
+<view class="sure_order_container">
+  <view class="distribution_box">
+    <view class="distribution_label">配送方式</view>
+    <view class="distribution_item {{way_id=='1'?'active_distribution_item':''}}" data-way_id="1" bindtap="checkWay">商家配送</view>
+    <view class="distribution_item {{way_id=='2'?'active_distribution_item':''}}" data-way_id="2" bindtap="checkWay">到店自提</view>
+  </view>
+  <!-- 地址信息 -->
+  <view class="address_box">
+    <!-- 商家配送 -->
+    <view class="way_store">
+
+    </view>
+    <!-- 底部的虚线 -->
+    <view class="bottom_line">
+      <view class="line_item {{index%2 == 1?'ji_line_item':''}}" wx:for="{{9}}" wx:key="*this"></view>
+    </view>
+  </view>
+</view>
