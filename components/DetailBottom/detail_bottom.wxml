@@ -24,7 +24,7 @@
     <view>立即兑换</view>
   </view>
   <!-- 商家入驻 -->
-  <view class="button_box" wx:if="{{goods_type == '3'}}">
+  <view class="button_box" wx:if="{{goods_type == '3'}}" bindtap="storeJoin">
     <view>商家入驻</view>
   </view>
 </view>

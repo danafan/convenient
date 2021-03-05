@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/sure_order/sure_order",
     "pages/index/index",
+    "pages/store_detail/store_detail",
+    "pages/point_list/point_list",
+    "pages/sure_order/sure_order",
     "pages/goods_detail/goods_detail",
     "pages/join/join",
     "pages/my/my",

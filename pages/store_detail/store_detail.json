@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商家详情",
+  "usingComponents": {
+    "detail_bottom": "../../components/DetailBottom/detail_bottom"
+  }
+}

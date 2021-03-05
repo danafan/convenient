@@ -1,0 +1,64 @@
+/* pages/point_list/point_list.wxss */
+.point_list_container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.display_style{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.current_title{
+  padding-left: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.current_box{
+  background-color: #fff;
+  height: 96rpx;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  font-size: 28rpx;
+}
+.location_icon{
+  margin-right: 8rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.aimed_text{
+  color:#d4237a;
+}
+.scroll_view{
+  margin-top: 15rpx;
+  flex:1;
+}
+.point_item{
+  margin-bottom: 15rpx;
+  background-color: #fff;
+  padding: 25rpx;
+  font-size: 28rpx;
+}
+.current_val{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.point_content{
+  margin-top: 30rpx;
+  margin-bottom: 25rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #F1F2F4;
+}
+.business_hours{
+  color: #8a8a8a;
+}
+.phone_icon{
+  width: 36rpx;
+  height: 36rpx;
+}

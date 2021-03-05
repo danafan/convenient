@@ -29,7 +29,6 @@ Page({
   },
   onLoad: function (options) {
     let goods_type = options.goods_type;
-    console.log(goods_type);
     this.setData({
       goods_type:goods_type
     })
@@ -55,7 +54,7 @@ Page({
   //确认购买
   sureOrder(){
     wx.navigateTo({
-      url: '/pages/sure_order/sure_order',
+      url: '/pages/sure_order/sure_order?goods_type=' + this.data.goods_type,
     });
   },
   //关闭弹框

@@ -1,0 +1,48 @@
+<!--pages/point_list/point_list.wxml-->
+<view class="point_list_container">
+  <view class="current_title">当前位置</view>
+  <view class="display_style current_box">
+    <view class="display_style">
+      <image class="location_icon" src="../../images/location_icon.png"></image>
+      <view>国泰科技大厦</view>
+    </view>
+    <view class="display_style">
+      <image class="location_icon" src="../../images/aimed_icon.png"></image>
+      <view class="aimed_text">重新定位</view>
+    </view>
+  </view>
+  <scroll-view class="scroll_view" scroll-t="true">
+    <view class="point_item">
+      <view class="display_style">
+        <view class="current_val">国泰科技大厦</view>
+        <view class="display_style">
+          <view class="aimed_text">【当前】</view>
+          <view>查看地图</view>
+        </view>
+      </view>
+      <view class="point_content">
+        陕西省西安市萨蒂是打开房间卡就是对方空间啊是对方空间啊还是短发撒进货到付款
+      </view>
+      <view class="display_style">
+        <view class="business_hours">营业时间：(周一至周五)8:00-23:00</view>
+        <image class="phone_icon" src="../../images/phone_icon.png"></image>
+      </view>
+    </view>
+    <view class="point_item">
+      <view class="display_style">
+        <view class="current_val">国泰科技大厦</view>
+        <view class="display_style">
+          <!-- <view class="aimed_text">【当前】</view> -->
+          <view>查看地图</view>
+        </view>
+      </view>
+      <view class="point_content">
+        陕西省西安市萨蒂是打开房间卡就是对方空间啊是对方空间啊还是短发撒进货到付款
+      </view>
+      <view class="display_style">
+        <view class="business_hours">营业时间：(周一至周五)8:00-23:00</view>
+        <image class="phone_icon" src="../../images/phone_icon.png"></image>
+      </view>
+    </view>
+  </scroll-view>
+</view>

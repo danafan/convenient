@@ -30,6 +30,10 @@ Component({
     //团购和积分购买
     buyGoods(){
       this.triggerEvent('onEmit');
+    },
+    // 商家入驻
+    storeJoin(){
+      this.triggerEvent('onEmit');
     }
   }
 })

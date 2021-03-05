@@ -1,5 +1,6 @@
 <!--pages/sure_order/sure_order.wxml-->
 <view class="sure_order_container">
+  <!-- 配送方式 -->
   <view class="distribution_box">
     <view class="distribution_label">配送方式</view>
     <view class="distribution_item {{way_id=='1'?'active_distribution_item':''}}" data-way_id="1" bindtap="checkWay">
@@ -27,22 +28,22 @@
         <view class="lift_left">
           <view class="lift_label">自提点</view>
         </view>
-        <view class="display_style">
+        <view class="display_style" bindtap="goPoint">
           <view class="lift_val">晋商国际</view>
           <image class="down_icon down" src="../../images/down_icon.png"></image>
         </view>
       </view>
-      <view class="lift_item bottom_line_solid">
+      <view class="lift_item display_style bottom_line_solid">
         <view class="lift_left">
           <view class="lift_label">提货时间</view>
           <view class="required">*</view>
         </view>
-        <view class="lift_right">
+        <view class="display_style">
           <view class="lift_val">请选择</view>
           <image class="down_icon down" src="../../images/down_icon.png"></image>
         </view>
       </view>
-      <view class="lift_item">
+      <view class="lift_item display_style">
         <view class="lift_left">
           <view class="lift_label">提货手机</view>
           <view class="required">*</view>
@@ -74,7 +75,7 @@
           <view class="goods_num">x1</view>
         </view>
         <view class="goods_price">
-          <view>
+          <view wx:if="{{goods_type == '2'}}">
             <text>10</text>
             <text class="margin_lr">积分</text>
             <text>+</text>
@@ -96,5 +97,34 @@
       <text class="margin_lr color_price">¥</text>
       <text class="total_price_text color_price">5.00</text>
     </view>
+  </view>
+  <!-- 支付信息 -->
+  <view class="display_style bottom_item bottom_line_solid margin_top">
+    <view class="lift_label">支付方式</view>
+    <view>在线支付</view>
+  </view>
+  <!-- 积分兑换 -->
+  <view class="display_style bottom_item bottom_line_solid margin_top" wx:if="{{goods_type == '2'}}">
+    <view class="lift_label">积分兑换</view>
+    <view>共21积分，本次使用10积分</view>
+  </view>
+  <!-- 运费 -->
+  <view class="display_style bottom_item bottom_line_solid">
+    <view class="lift_label">运费</view>
+    <view>+¥10</view>
+  </view>
+  <!-- 实际支付 -->
+  <view class="display_style bottom_item">
+    <view class="lift_label">实际支付</view>
+    <view>¥5</view>
+  </view>
+  <!-- 底部按钮框 -->
+  <view class="bottom_pay">
+    <view class="price_box">
+      <text class="total_label">实付：</text>
+      <text class="margin_lr color_price">¥</text>
+      <text class="total_price_text color_price">5.00</text>
+    </view>
+    <view class="pay_button">立即支付</view>
   </view>
 </view>

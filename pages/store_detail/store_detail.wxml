@@ -1,0 +1,53 @@
+<!--pages/store_detail/store_detail.wxml-->
+<view class="store_detail_container">
+  <!-- 商家信息 -->
+  <view class="store_info_box">
+    <swiper class="swiper_box" autoplay="true"
+      interval="5000" duration="80" circular="true">
+      <swiper-item wx:for="{{banner_list}}" wx:key="*this">
+        <image class="swiper_box" mode="aspectFill" src="{{item}}" data-index="{{index}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="store_info_show">
+      <view class="info_title">商家信息展示</view>
+      <view class="info_item display_style">
+        <view class="display_style">
+          <view class="is_good margin_right">优</view>
+          <view class="store_name">宜佳旅馆</view>
+        </view>
+      </view>
+      <view class="info_item display_style">
+        <view class="display_style">
+          <image class="store_icon margin_right" src="../../images/store_phone_icon.png"></image>
+          <view>13067882123</view>
+        </view>
+        <view class="store_button">拨打</view>
+      </view>
+      <view class="info_item display_style">
+        <view class="display_style">
+          <image class="store_icon margin_right" src="../../images/store_location_icon.png"></image>
+          <view>太原古交市宜家旅馆</view>
+        </view>
+        <view class="store_button">导航</view>
+      </view>
+      <view class="info_item display_style">
+        营业时间：(周一至周五)8:00 - 13:00
+      </view>
+    </view>
+  </view>
+  <!-- 店铺详情 -->
+  <view class="title_list">
+    <view class="title_box">
+      <view class="title_box_left">店铺详情</view>
+    </view>
+    <view class="goods_img_list">
+      <image class="goods_img" mode="widthFix" src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg">
+      </image>
+      <image class="goods_img" mode="widthFix" src="https://scpic3.chinaz.net/Files/pic/pic9/202102/apic31073_s.jpg">
+      </image>
+      <image class="goods_img" mode="widthFix" src="https://img.ivsky.com/img/tupian/t/202002/14/xican_meishi-001.jpg">
+      </image>
+    </view>
+  </view>
+  <detail_bottom  goods_type="3" bind:onEmit="goJoin"/>
+</view>
