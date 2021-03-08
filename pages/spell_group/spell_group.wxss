@@ -1,0 +1,11 @@
+/* pages/spell_group/spell_group.wxss */
+.top_tab{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.order_list{
+  padding-top: 90rpx;
+}

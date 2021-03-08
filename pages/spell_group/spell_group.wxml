@@ -1,0 +1,9 @@
+<!--pages/spell_group/spell_group.wxml-->
+<view class="spell_group_container">
+  <view class="top_tab">
+    <tab_bar page_type="1" />
+  </view>
+  <view class="order_list">
+    <order_item order_item="{{item}}" wx:for="{{order_list}}" wx:key="id" />
+  </view>
+</view>

@@ -1,0 +1,31 @@
+/* components/TabBar/tab_bar.wxss */
+.tab_list {
+  border-bottom: 1rpx solid #F1F2F4;
+  background: #fff;
+  height: 80rpx;
+  display: flex;
+  justify-content:space-around;
+}
+
+.tab {
+  height: 80rpx;
+  width: 20%;
+  font-size: 28rpx;
+  color: #515253;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.active_color {
+  color: #D63250;
+}
+
+.active_tab {
+  position: absolute;
+  bottom: 0;
+  background-color: #D63250;
+  width: 60%;
+  height: 2rpx;
+}

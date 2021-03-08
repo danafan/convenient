@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单列表",
+  "usingComponents": {
+    "tab_bar": "../../components/TabBar/tab_bar",
+    "order_item": "../../components/OrderItem/order_item"
+  }
+}

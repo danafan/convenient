@@ -1,0 +1,51 @@
+<!--components/OrderItem/order_item.wxml-->
+<view class="order_item_container">
+  <view class="between">
+    <view>下单时间：2020-01-21 12:23:45</view>
+    <!-- 我的拼团 -->
+    <view wx:if="{{order_item.page_type == '1'}}">
+      <view class="red_color" wx:if="{{order_item.status == '1'}}">待支付</view>
+      <view class="red_color" wx:if="{{order_item.status == '2'}}">待分享</view>
+      <view class="red_color" wx:if="{{order_item.status == '3'}}">待发货</view>
+      <view class="red_color" wx:if="{{order_item.status == '4'}}">待收货</view>
+    </view>
+    <!-- 订单列表 -->
+    <view wx:if="{{order_item.page_type == '2'}}">
+      <view class="red_color" wx:if="{{order_item.status == '1'}}">待支付</view>
+      <view class="red_color" wx:if="{{order_item.status == '2'}}">备货中</view>
+      <view class="red_color" wx:if="{{order_item.status == '3'}}">待收货</view>
+      <view class="red_color" wx:if="{{order_item.status == '4'}}">已完成</view>
+    </view>
+  </view>
+  <view class="order_content">
+    <image class="goods_img" mode="aspectFill" src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg">
+    </image>
+    <view class="goods_content">
+      <view class="between">
+        <view class="goods_name">测试商品 不发货</view>
+        <view class="goods_price">
+          <text>¥</text>
+          <text class="p_text">70.00</text>
+        </view>
+      </view>
+      <view class="number_row">
+        <text>x3</text>
+      </view>
+      <view class="between">
+        <view class="order_type">拼团</view>
+      </view>
+    </view>
+  </view>
+  <view class="order_bottom">
+    <!-- 邀请按钮 -->
+    <view class="invitation" wx:if="{{order_item.page_type == '1' && order_item.status == '2'}}">
+      邀请好友拼单
+    </view>
+    <!-- 普通文字 -->
+    <view wx:else>
+      <text>共1件商品，实付：</text>
+      <text class="red_color">¥</text>
+      <text class="red_color p_text">70.00</text>
+    </view>
+  </view>
+</view>
