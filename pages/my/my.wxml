@@ -1,2 +1,121 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="my_container">
+  <view class="top_content">
+    <view class="user_info">
+      <view class="user_img">
+        <image class="user_icon" src="../../images/user_icon.png"></image>
+      </view>
+      <view class="login_box">
+        <view>立即登录</view>
+        <image class="white_right" src="../../images/white_right.png"></image>
+      </view>
+    </view>
+    <view class="vip_box">
+      <view class="vip_title">
+        <image class="vip_icon" src="../../images/vip_icon.png"></image>
+        <view>成为会员</view>
+      </view>
+      <view class="get_button">立即领卡</view>
+    </view>
+  </view>
+  <view class="qr_box">
+    <view class="qr_item">
+      <image class="qr_icon" src="../../images/scan_icon.png"></image>
+      <view>扫一扫</view>
+    </view>
+    <view class="line"></view>
+    <view class="qr_item">
+      <image class="qr_icon" src="../../images/qr_code.png"></image>
+      <view>二维码</view>
+    </view>
+  </view>
+  <view class="menu_box">
+    <view class="container_box padd_tb display_style">
+      <view class="pre_item">
+        <view class="item_num">0</view>
+        <view class="item_label">
+          <image class="per_icon" src="../../images/per_icon_01.png"></image>
+          <view>积分</view>
+        </view>
+      </view>
+      <view class="line"></view>
+      <view class="pre_item">
+        <view class="item_num">0</view>
+        <view class="item_label">
+          <image class="per_icon" src="../../images/per_icon_02.png"></image>
+          <view>余额</view>
+        </view>
+      </view>
+      <view class="line"></view>
+      <view class="pre_item">
+        <view class="item_num">0</view>
+        <view class="item_label">
+          <image class="per_icon" src="../../images/per_icon_03.png"></image>
+          <view>优惠券</view>
+        </view>
+      </view>
+    </view>
+    <view class="container_box padd_tb">
+      <view class="order_top">
+        <view class="order_title">订单信息</view>
+        <view class="get_more" bindtap="goOrder">
+          <view>查看更多</view>
+          <image class="right_icon" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="order_list">
+        <view class="order_item" bindtap="goOrder">
+          <image class="order_icon" src="../../images/order_icon_01.png"></image>
+          <view>待付款</view>
+        </view>
+        <view class="order_item" bindtap="goOrder">
+          <image class="order_icon" src="../../images/order_icon_02.png"></image>
+          <view>待发货</view>
+        </view>
+        <view class="order_item" bindtap="goOrder">
+          <image class="order_icon" src="../../images/order_icon_03.png"></image>
+          <view>待收货</view>
+        </view>
+        <view class="order_item" bindtap="goOrder">
+          <image class="order_icon" src="../../images/order_icon_04.png"></image>
+          <view>已完成</view>
+        </view>
+        <view class="order_item" bindtap="goOrder">
+          <image class="order_icon" src="../../images/order_icon_05.png"></image>
+          <view>售后</view>
+        </view>
+      </view>
+    </view>
+    <view class="container_box">
+      <view class="menu_item bottom_line">
+        <view class="menu_left">
+          <image class="menu_icon" src="../../images/menu_icon_01.png"></image>
+          <view>我的收藏</view>
+        </view>
+        <image class="right_icon" src="../../images/down_icon.png"></image>
+      </view>
+      <view class="menu_item bottom_line">
+        <view class="menu_left">
+          <image class="menu_icon" src="../../images/menu_icon_02.png"></image>
+          <view>成为团长</view>
+        </view>
+        <image class="right_icon" src="../../images/down_icon.png"></image>
+      </view>
+      <view class="menu_item bottom_line">
+        <view class="menu_left">
+          <image class="menu_icon" src="../../images/menu_icon_03.png"></image>
+          <view>在线客服</view>
+        </view>
+        <image class="right_icon" src="../../images/down_icon.png"></image>
+      </view>
+      <view class="menu_item">
+        <view class="menu_left">
+          <image class="menu_icon" src="../../images/menu_icon_04.png"></image>
+          <view>帮助中心</view>
+        </view>
+        <image class="right_icon" src="../../images/down_icon.png"></image>
+      </view>
+    </view>
+  </view>
+
+</view>

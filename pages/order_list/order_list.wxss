@@ -31,7 +31,7 @@
 .search_content{
   background-color: #F1F2F4;
   border-radius: 28rpx;
-  border:1rpx solid #8a8a8a;
+  border:1rpx solid #bfbfbf;
   flex:1;
   height: 56rpx;
   display: flex;

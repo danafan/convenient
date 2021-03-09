@@ -1,13 +1,13 @@
 {
   "pages": [
+    "pages/my/my",
+    "pages/index/index",
     "pages/order_list/order_list",
     "pages/spell_group/spell_group",
-    "pages/index/index",
     "pages/store_detail/store_detail",
     "pages/point_list/point_list",
     "pages/sure_order/sure_order",
     "pages/goods_detail/goods_detail",
-    "pages/my/my",
     "pages/comment_list/comment_list"
   ],
   "tabBar": {
