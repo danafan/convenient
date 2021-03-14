@@ -1,5 +1,5 @@
 <!--components/OrderItem/order_item.wxml-->
-<view class="order_item_container">
+<view class="order_item_container" data-page_type="{{order_item.page_type}}" bindtap="goDetail">
   <view class="between">
     <view>下单时间：2020-01-21 12:23:45</view>
     <!-- 我的拼团 -->

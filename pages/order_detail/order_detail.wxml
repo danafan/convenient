@@ -1,0 +1,101 @@
+<!--pages/order_detail/order_detail.wxml-->
+<view class="order_detail_container">
+  <!-- 顶部背景 -->
+  <view class="order_status_box">
+    <view class="status_text">备货中...</view>
+    <image class="cooperation_icon" src="../../images/cooperation_icon.png"></image>
+  </view>
+  <!-- 用户自提 -->
+  <view class="user_to margin_bottom">
+    <view class="send_item border_bottom">
+      <image class="order_detail_icon" src="../../images/order_detail_icon_01.png"></image>
+      <view class="send_value">提货手机：13067882143</view>
+    </view>
+    <view class="send_item border_bottom">
+      <image class="order_detail_icon" src="../../images/order_detail_icon_02.png"></image>
+      <view class="send_value">
+        <view class="send_value_item">
+          <view class="send_value_label">自提点：</view>
+          <view class="send_value_content">阳光国际会展中心</view>
+        </view>
+        <view class="send_value_item">
+          <view class="send_value_label">提货地址：</view>
+          <view class="send_value_content">阳光国际会展中心阳光国际会展中心阳光国际会展中心阳光国际会展中心阳光国际会展中心</view>
+        </view>
+        <view class="send_value_item">
+          <view class="send_value_label">营业时间：</view>
+          <view class="send_value_content">周一至周五（9:00-13:00）</view>
+        </view>
+        <view class="send_value_item">
+          <view class="send_value_label">自提点电话：</view>
+          <view class="send_value_content is_phone">13075635464</view>
+        </view>
+      </view>
+    </view>
+    <view class="send_item">
+      <image class="order_detail_icon" src="../../images/order_detail_icon_03.png"></image>
+      <view class="send_value">配送方式：到店自提</view>
+    </view>
+  </view>
+  <!-- 购物清单 -->
+  <view class="user_to margin_bottom">
+    <view class="send_item border_bottom">
+      <image class="order_detail_icon" src="../../images/order_detail_icon_04.png"></image>
+      <view class="send_value">购物清单</view>
+    </view>
+    <view class="send_item">
+      <view class="goods_box">
+        <image class="goods_img" mode="aspectFill"
+          src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+        <view class="goods_content">
+          <view class="name_price">
+            <view class="goods_name">这是商品名称阿里斯顿很快就啊是这是商品名称阿里斯顿很快就啊是这是商品名称阿里斯顿很快就啊是</view>
+            <view>¥152.33</view>
+          </view>
+          <view class="goods_num">x1</view>
+          <view class="goods_tag">拼团</view>
+        </view>
+      </view>
+    </view>
+    <view class="send_item border_bottom remark">
+      买家留言：这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言这是买家留言</view>
+    <view class="send_item list_item">
+      <view>商品金额</view>
+      <view>¥152.24</view>
+    </view>
+    <view class="send_item list_item">
+      <view>余额支付</view>
+      <view>-¥152.24</view>
+    </view>
+    <view class="send_item list_item">
+      <view>实际支付</view>
+      <view class="actual">¥0</view>
+    </view>
+  </view>
+  <!-- 订单信息 -->
+  <view class="order_info">
+    <view class="user_to send_item border_bottom">
+      <view>订单编号：1231231231231231</view>
+      <view>复制</view>
+    </view>
+    <view class="user_to send_item border_bottom">
+      <view>下单时间：2021-03-14 17:23:45</view>
+    </view>
+    <view class="user_to send_item border_bottom">
+      <view>支付时间：2021-03-14 17:23:45</view>
+    </view>
+    <view class="user_to send_item border_bottom">
+      <view>支付方式：无需支付</view>
+    </view>
+    <view class="user_to send_item border_bottom">
+      <view>确认收货时间：2021-03-14 17:23:45</view>
+    </view>
+    <view class="user_to send_item copy">
+      <image class="order_detail_icon" src="../../images/order_detail_icon_05.png"></image>
+      <view>一键复制订单信息</view>
+    </view>
+  </view>
+  <view class="user_to send_item delete_order">
+    <view class="delete_but">删除订单</view>
+  </view>
+</view>

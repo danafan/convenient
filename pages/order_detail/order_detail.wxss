@@ -1,0 +1,128 @@
+/* pages/order_detail/order_detail.wxss */
+/* 顶部背景 */
+.order_status_box{
+  height: 160rpx;
+  background-color: #CB1C23;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+.status_text{
+  font-size: 32rpx;
+  color: #fff;
+}
+.cooperation_icon{
+  width: 130rpx;
+  height: 80rpx;
+}
+/* 用户自提 */
+.user_to{
+  background-color: #fff;
+}
+.border_bottom{
+  border-bottom: 1rpx solid #F1F2F4;
+}
+.send_item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25rpx;
+  font-size: 28rpx;
+}
+.order_detail_icon{
+  margin-right: 15rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.send_value{
+  flex:1;
+}
+.send_value_item{
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: flex-start;
+}
+.send_value_label{
+  width: 168rpx;
+}
+.send_value_content{
+  flex:1;
+}
+.is_phone{
+  color:#1F71F4;
+  font-weight: 600;
+}
+.list_item{
+  justify-content: space-between;
+}
+.actual{
+  color: #CB1C23;
+  font-weight: 600;
+}
+.margin_bottom{
+  margin-bottom: 25rpx;
+}
+.goods_box{
+  display: flex;
+  align-items: center;
+}
+.goods_img{
+  margin-right: 15rpx;
+  width: 152rpx;
+  height: 152rpx;
+}
+.goods_content{
+  flex:1;
+  height: 152rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name_price{
+  display: flex;
+  align-items: flex-start;
+}
+.goods_name{
+  color:#8a8a8a;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 10rpx;
+}
+.goods_num{
+  display: flex;
+  justify-content: flex-end;
+  color:#8a8a8a;
+}
+.goods_tag{
+  border:1rpx solid #C31B21;
+  width: 60rpx;
+  height: 28rpx;
+  text-align: center;
+  line-height: 28rpx;
+  font-size: 22rpx;
+  color:#C31B21;
+}
+.order_info{
+  color: #8a8a8a;
+}
+.copy{
+  justify-content: center;
+}
+.delete_order{
+  margin-top: 40rpx;
+  justify-content: flex-end;
+}
+.delete_but{
+  border:1rpx solid #8a8a8a;
+  width: 130rpx;
+  height: 48rpx;
+  text-align: center;
+  line-height: 48rpx;
+  font-size: 26rpx;
+  color:#8a8a8a;
+}

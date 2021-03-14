@@ -27,12 +27,22 @@ Component({
         url: '/pages/index/index',
       });
     },
+    //跳转我的
+    goMy(){
+      wx.switchTab({
+        url: '/pages/my/my',
+      });
+    },
     //团购和积分购买
     buyGoods(){
       this.triggerEvent('onEmit');
     },
     // 商家入驻
     storeJoin(){
+      this.triggerEvent('onEmit');
+    },
+    //邀请好友
+    sharFun(){
       this.triggerEvent('onEmit');
     }
   }

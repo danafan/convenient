@@ -1,10 +1,10 @@
 <!--pages/order_list/order_list.wxml-->
 <view class="spell_group_container">
   <view class="top_tab">
-    <tab_bar page_type="2"/>
+    <tab_bar page_type="2" />
   </view>
   <view class="order_list">
-    <order_item order_item="{{item}}" wx:for="{{order_list}}" wx:key="id"/>
+    <order_item order_item="{{item}}" wx:for="{{order_list}}" wx:key="id" />
   </view>
   <view class="select_modal">
     <view class="search_box">
@@ -18,7 +18,8 @@
       </view>
     </view>
     <view class="select_content" wx:if="{{show_modal}}">
-      <view class="select_item" wx:for="{{select_list}}" wx:key="id" data-item="{{item}}" bindtap="changeSelect">{{item.name}}</view>
+      <view class="select_item" wx:for="{{select_list}}" wx:key="id" data-item="{{item}}" bindtap="changeSelect">
+        {{item.name}}</view>
     </view>
     <view class="modal_back" bindtap="selectFun" wx:if="{{show_modal}}"></view>
   </view>
