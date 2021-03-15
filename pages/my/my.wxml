@@ -31,7 +31,7 @@
   </view>
   <view class="menu_box">
     <view class="container_box padd_tb display_style">
-      <view class="pre_item">
+      <view class="pre_item" bindtap="goIntegral">
         <view class="item_num">0</view>
         <view class="item_label">
           <image class="per_icon" src="../../images/per_icon_01.png"></image>
@@ -39,7 +39,7 @@
         </view>
       </view>
       <view class="line"></view>
-      <view class="pre_item">
+      <view class="pre_item" bindtap="goBalance">
         <view class="item_num">0</view>
         <view class="item_label">
           <image class="per_icon" src="../../images/per_icon_02.png"></image>
@@ -87,7 +87,7 @@
       </view>
     </view>
     <view class="container_box">
-      <view class="menu_item bottom_line">
+      <view class="menu_item bottom_line" bindtap="goCollection">
         <view class="menu_left">
           <image class="menu_icon" src="../../images/menu_icon_01.png"></image>
           <view>我的收藏</view>

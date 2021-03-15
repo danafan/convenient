@@ -1,0 +1,22 @@
+<!--pages/collection_list/collection_list.wxml-->
+<view>
+  <view class="tab_list">
+    <view class="tab {{active_index == index? 'active_color' : ''}}" wx:for="{{tab_list}}" wx:key="id"
+      data-id="{{item.id}}" data-index="{{index}}" bindtap="changeCurrent">
+      {{item.name}}
+      <view class="active_tab" wx:if="{{active_index == index}}"></view>
+    </view>
+  </view>
+  <view class="collection_list">
+    <view class="collection_item" wx:for="{{collection_list}}" wx:key="id" data-item_type="{{item.item_type}}" bindtap="goDetail">
+      <image class="goods_img" mode="aspectFill"
+        src="{{item.img_url}}"></image>
+      <view class="content_box">
+        <view class="content_text">
+          {{item.name}}
+        </view>
+      </view>
+      <image class="collection_close_icon" src="../../images/collection_close_icon.png" data-id="{{item.id}}" catchtap="deleteItem"></image>
+    </view>
+  </view>
+</view>

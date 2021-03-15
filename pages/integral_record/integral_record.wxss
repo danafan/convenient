@@ -1,0 +1,110 @@
+/* pages/integral_record/integral_record.wxss */
+.record_container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.top_back{
+  background-color: #DD435F;
+  height: 280rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.record_content{
+  font-size: 68rpx;
+  font-weight: 600;
+}
+.record_desc{
+  font-size: 28rpx;
+}
+/* 导航 */
+.tab_list {
+  border-bottom: 1rpx solid #F1F2F4;
+  background: #fff;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab {
+  height: 80rpx;
+  width: 20%;
+  font-size: 28rpx;
+  color: #515253;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.active_color {
+  color: #DD435F;
+}
+
+.active_tab {
+  position: absolute;
+  bottom: 0;
+  background-color: #DD435F;
+  width: 60%;
+  height: 5rpx;
+}
+/* 标题 */
+.record_title{
+  background-color: #fff;
+  padding-left: 25rpx;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+.line{
+  margin-right: 10rpx;
+  background-color: #DD435F;
+  height: 30rpx;
+  width: 4rpx;
+}
+/* 列表内容 */
+.record_list{
+  flex: 1;
+  overflow-y: scroll;
+}
+.month{
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 25rpx;
+}
+.item_content{
+  border-bottom: 1rpx solid #F1F2F4;
+  background-color: #fff;
+  height: 162rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.content_left{
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content_right{
+  font-size: 30rpx;
+}
+.time{
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.empty_toast{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 100%;
+  text-align: center;
+}

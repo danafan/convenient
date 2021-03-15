@@ -1,0 +1,59 @@
+<!--pages/integral_record/integral_record.wxml-->
+<view class="record_container">
+  <view class="top_back">
+    <view class="record_content">21</view>
+    <view class="record_desc">有12积分12月30号到期</view>
+  </view>
+  <!-- 导航 -->
+  <view class="tab_list">
+    <view class="tab {{active_index == index? 'active_color' : ''}}" wx:for="{{tab_list}}" wx:key="id"
+      data-id="{{item.id}}" data-index="{{index}}" bindtap="changeCurrent">
+      {{item.name}}
+      <view class="active_tab" wx:if="{{active_index == index}}"></view>
+    </view>
+  </view>
+  <!-- 标题 -->
+  <view class="record_title">
+    <view class="line"></view>
+    <view class="record_desc">积分明细</view>
+  </view>
+  <!-- 列表 -->
+  <view class="record_list">
+    <view class="record_item">
+      <view class="month time">2020年9月</view>
+      <view class="item_content">
+        <view class="content_left">
+          <view class="content_right">签到有礼</view>
+          <view class="time">2020.05.23 11:29:32</view>
+        </view>
+        <view class="content_right">+1</view>
+      </view>
+      <view class="item_content">
+        <view class="content_left">
+          <view class="content_right">签到有礼</view>
+          <view class="time">2020.05.23 11:29:32</view>
+        </view>
+        <view class="content_right">+1</view>
+      </view>
+    </view>
+    <view class="record_item">
+      <view class="month time">2020年10月</view>
+      <view class="item_content">
+        <view class="content_left">
+          <view class="content_right">签到有礼</view>
+          <view class="time">2020.05.23 11:29:32</view>
+        </view>
+        <view class="content_right">+1</view>
+      </view>
+      <view class="item_content">
+        <view class="content_left">
+          <view class="content_right">签到有礼</view>
+          <view class="time">2020.05.23 11:29:32</view>
+        </view>
+        <view class="content_right">+1</view>
+      </view>
+    </view>
+    <view class="empty_toast time">没有更多了～</view>
+  </view>
+
+</view>

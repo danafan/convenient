@@ -1,10 +1,13 @@
 {
   "pages": [
+    "pages/my/my",
+    "pages/balance_list/balance_list",
+    "pages/integral_record/integral_record",
+    "pages/collection_list/collection_list",
+    "pages/index/index",
     "pages/order_detail/order_detail",
     "pages/sure_order/sure_order",
     "pages/group_detail/group_detail",
-    "pages/index/index",
-    "pages/my/my",
     "pages/order_list/order_list",
     "pages/spell_group/spell_group",
     "pages/store_detail/store_detail",
