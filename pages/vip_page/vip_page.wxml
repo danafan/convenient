@@ -1,0 +1,26 @@
+<!--pages/vip_page/vip_page.wxml-->
+<view class="vip_container">
+  <view class="vip_img"></view>
+  <view class="vip_title">会员权益</view>
+  <view class="percent_row">
+    <view class="percent_item">
+      <image class="percent_icon" src="../../images/percent_icon.png"></image>
+      <text class="percent_title">积分兑换</text>
+    </view>
+    <view class="percent_item">
+      <view>
+        <text>更多权益</text>
+        <text>敬请期待</text>
+      </view>
+      <text>...</text>
+    </view>
+  </view>
+  <view class="open_row">
+    <view class="open_card">
+      <text>开卡条件</text>
+      <image class="right_icon" src="../../images/down_icon.png"></image>
+    </view>
+    <text>最终解释权归本平台所有</text>
+  </view>
+  <view class="get_card">立即领卡</view>
+</view>

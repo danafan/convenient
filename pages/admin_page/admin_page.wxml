@@ -1,0 +1,59 @@
+<!--pages/admin_page/admin_page.wxml-->
+<view class="admin_page_container">
+  <view class="top_content">
+    <view class="content_item">
+      <text class="number_val">0</text>
+      <text class="number_label">今日收积分</text>
+    </view>
+    <view class="content_item">
+      <text class="number_val">0</text>
+      <text class="number_label">积分余额</text>
+    </view>
+  </view>
+  <view class="size_box"></view>
+  <view class="menu_list">
+    <view class="menu_item">
+      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <text class="menu_label">活动订单核销</text>
+    </view>
+    <view class="menu_item">
+      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <text class="menu_label">申请体现</text>
+    </view>
+    <view class="menu_item">
+      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <text class="menu_label">商家提现账户</text>
+    </view>
+    <view class="menu_item">
+      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <text class="menu_label">订单管理</text>
+    </view>
+    <view class="menu_item">
+      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <text class="menu_label">售后管理</text>
+    </view>
+    <view class="menu_item">
+      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <text class="menu_label">正在营业</text>
+    </view>
+    <view class="menu_item">
+      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <text class="menu_label">商品管理</text>
+    </view>
+    <view class="menu_item">
+      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <text class="menu_label">客户管理</text>
+    </view>
+    <view class="menu_item">
+      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <text class="menu_label">骑手提现账户</text>
+    </view>
+    <view class="menu_item">
+      <view class="more_toast">
+        <view>更多功能</view>
+        <view>敬请期待</view>
+      </view>
+      <text>...</text>
+    </view>
+  </view>
+</view>

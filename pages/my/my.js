@@ -3,6 +3,12 @@ Page({
   data: {
 
   },
+  //vip
+  goVip(){
+    wx.navigateTo({
+      url: '/pages/vip_page/vip_page'
+    });
+  },
   //积分
   goIntegral(){
     wx.navigateTo({

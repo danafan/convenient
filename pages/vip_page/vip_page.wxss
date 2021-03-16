@@ -1,0 +1,71 @@
+/* pages/vip_page/vip_page.wxss */
+page{
+  background-color: #fff;
+}
+.vip_img{
+  background-color: salmon;
+  height: 236rpx;
+}
+.vip_title{
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #8a8a8a;
+}
+.percent_row{
+  margin-top: 30rpx;
+  display: flex;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.percent_item{
+  margin-right: 50rpx;
+  width: 120rpx;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.percent_icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.percent_title{
+  font-size: 30rpx;
+}
+.open_row{
+  padding-left: 25rpx;
+  margin-top: 50rpx;
+  height: 110rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 28rpx;
+  color: #8a8a8a;
+}
+.open_card{
+  display: flex;
+  align-items: center;
+}
+.right_icon{
+  width: 28rpx;
+  height: 28rpx;
+  transform: rotate(-90deg);
+}
+.get_card{
+  border-radius: 5rpx;
+  background-color: #E11F26;
+  width: 698rpx;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color:#fff;
+  position: relative;
+  top: 30rpx;
+  left: 50%;
+  transform: translate(-50%);
+}

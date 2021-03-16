@@ -15,7 +15,7 @@
         <image class="vip_icon" src="../../images/vip_icon.png"></image>
         <view>成为会员</view>
       </view>
-      <view class="get_button">立即领卡</view>
+      <view class="get_button" bindtap="goVip">立即领卡</view>
     </view>
   </view>
   <view class="qr_box">

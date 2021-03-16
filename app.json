@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/admin_page/admin_page",
     "pages/my/my",
+    "pages/vip_page/vip_page",
     "pages/balance_list/balance_list",
     "pages/integral_record/integral_record",
     "pages/collection_list/collection_list",
