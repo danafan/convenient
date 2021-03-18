@@ -1,0 +1,122 @@
+/* pages/admin/admin_order_list/admin_order_list.wxss */
+.amdin_order_list{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tab_list {
+  border-bottom: 1rpx solid #F1F2F4;
+  background: #fff;
+  height: 80rpx;
+  display: flex;
+  justify-content:space-around;
+}
+
+.tab {
+  height: 80rpx;
+  width: 20%;
+  font-size: 28rpx;
+  color: #515253;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.active_color {
+  color: #267EF4;
+}
+
+.active_tab {
+  position: absolute;
+  bottom: 0;
+  background-color: #267EF4;
+  width: 30%;
+  height: 6rpx;
+}
+.order_list{
+  flex:1;
+  padding-top: 25rpx;
+  overflow-y: scroll;
+}
+.order_item{
+  margin-bottom: 25rpx;
+  font-size: 28rpx;
+}
+.padding_lr{
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.item_top{
+  background-color: #fff;
+  height: 82rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create_time{
+  color: #8a8a8a;
+}
+.order_status{
+  color: #267EF4;
+}
+.order_content{
+  background-color: #F7F7F7;
+  height: 168rpx;
+  display: flex;
+  align-items: center;
+}
+.goods_img{
+  margin-right: 15rpx;
+  width: 132rpx;
+  height: 132rpx;
+}
+.content_box{
+  flex: 1;
+  height: 132rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content_box_top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box_top_left{
+  display: flex;
+  align-items: center;
+}
+.tag{
+  margin-right: 10rpx;
+  border:1rpx solid #8a8a8a;
+  border-radius: 5rpx;
+  width: 58rpx;
+  text-align: center;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 20rpx;
+}
+.name{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.order_bottom{
+  background-color: #fff;
+  height: 110rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.price_text{
+  font-size: 32rpx;
+  font-weight: 600;
+}

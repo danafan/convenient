@@ -32,5 +32,11 @@ Page({
     wx.navigateTo({
       url: '/pages/collection_list/collection_list'
     });
-  }
+  },
+  //成为团长
+  goRegister(){
+    wx.navigateTo({
+      url: '/pages/register_page/register_page'
+    });
+  },
 })

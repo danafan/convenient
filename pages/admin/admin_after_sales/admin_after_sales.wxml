@@ -1,0 +1,52 @@
+<!--pages/admin/admin_after_sales/admin_after_sales.wxml-->
+<view class="admin_after_sales_container">
+  <view class="order_item">
+    <view class="item_top padding_lr">
+      <view class="create_time">下单时间：2021-03-23 13:34:25</view>
+      <view class="order_status">售后完成</view>
+    </view>
+    <view class="order_content padding_lr">
+      <image class="goods_img" mode="aspectFill"
+        src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+      <view class="content_box">
+        <view class="name">各族儿女心相连各族儿女心相连各族儿女心相连各族儿女心相连</view>
+        <view class="create_time">x1</view>
+      </view>
+    </view>
+    <view class="order_bottom padding_lr" bindtap="goOrderDetail">
+      <view class="create_time">订单详情</view>
+      <image class="right_icon" src="../../../images/down_icon.png"></image>
+    </view>
+  </view>
+  <view class="back_box padding_lr">
+    <view class="after_money">
+      <view class="item_row">
+        <view class="item_lable">售后金额</view>
+        <view class="item_value" bindtap="isDown">
+          <view class="price">¥156.00</view>
+          <image class="down_icon {{is_down?'rotate':''}}" src="../../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="after_item" wx:if="{{is_down}}">
+        <text>应退积分</text>
+        <text>0</text>
+      </view>
+      <view class="after_item" wx:if="{{is_down}}">
+        <text>应退余额</text>
+        <text>¥132.00</text>
+      </view>
+    </view>
+    <view class="back_item">
+      <view class="item_lable">售后类型</view>
+      <view class="item_value">仅退款</view>
+    </view>
+    <view class="back_item">
+      <view class="item_lable">售后说明</view>
+      <view class="item_value">哈哈哈</view>
+    </view>
+    <view class="back_item">
+      <view class="item_lable">售后方式</view>
+      <view class="item_value">系统自动售后</view>
+    </view>
+  </view>
+</view>

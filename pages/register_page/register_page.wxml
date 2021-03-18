@@ -1,0 +1,126 @@
+<!--pages/register_page/register_page.wxml-->
+<view class="register_page">
+  <view class="register_group">
+    <view class="group_title">基本信息</view>
+    <view class="group_content">
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">联系人</view>
+          <input class="input" data-type="user_name" placeholder="必填" bindinput="bindKeyInput"/>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">联系电话</view>
+          <input class="input" data-type="phone" placeholder="必填" bindinput="bindKeyInput"/>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">微信号</view>
+          <input class="input" data-type="wechart" bindinput="bindKeyInput"/>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="register_group">
+    <view class="group_title">店铺信息</view>
+    <view class="group_content">
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">店铺名称</view>
+          <input class="input" data-type="store_name" placeholder="必填" bindinput="bindKeyInput"/>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">所在地区</view>
+          <view class="input">请选择地区</view>
+        </view>
+        <view class="item_small_row">
+          <image class="down_icon" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">详细地址</view>
+          <input class="input" data-type="address_detail" placeholder="必填" bindinput="bindKeyInput"/>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">所售类目</view>
+          <view class="input">请选择类目</view>
+        </view>
+        <view class="item_small_row">
+          <image class="down_icon" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">客服电话</view>
+          <input class="input" type="number" data-type="service_phone" placeholder="必填" bindinput="bindKeyInput"/>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">营业时间</view>
+        </view>
+        <view class="item_small_row">
+          <text class="red_color">请选择营业时间</text>
+          <image class="down_icon" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">重复</view>
+          <!-- <view class="input">请选择类目</view> -->
+        </view>
+        <view class="item_small_row">
+          <text>每天</text>
+          <image class="down_icon" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="register_group">
+    <view class="group_title">企业信息</view>
+    <view class="group_content">
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">营业执照</view>
+          <view class="input">请上传营业执照</view>
+        </view>
+        <view class="item_small_row">
+          <image class="down_icon" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">身份证正面</view>
+          <view class="input">请上传身份证正面</view>
+        </view>
+        <view class="item_small_row">
+          <image class="down_icon" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="group_item">
+        <view class="item_small_row">
+          <view class="itme_label">身份证正面</view>
+          <view class="input">请上传身份证反面</view>
+        </view>
+        <view class="item_small_row">
+          <image class="down_icon" src="../../images/down_icon.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="agreement_row">
+    <image class="radio_icon" src="../../images/active_radio_icon.png" wx:if="{{is_radio}}" bindtap="checkRadio"></image>
+    <image class="radio_icon" src="../../images/radio_icon.png" wx:else  bindtap="checkRadio"></image>
+    <text>我已阅读并同意同意</text>
+    <text class="green_text">《入驻协议》</text>
+  </view>
+  <view class="submit_button" bindtap="goAdmin">提交</view>
+  <view class="go_back" bindtap="goHome">返回首页</view>
+</view>

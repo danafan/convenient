@@ -1,0 +1,96 @@
+<!--pages/admin/admin_order_detail/admin_order_detail.wxml-->
+<view class="admin_order_detail">
+  <!-- 到店自提 -->
+  <!-- <view class="back_box padding_lr">
+    <view class="back_item">
+      <view class="item_lable">配送方式</view>
+      <view class="item_value">到店自提</view>
+    </view>
+    <view class="back_item">
+      <view class="item_lable">提货手机</view>
+      <view class="item_value blue_style">13864536453</view>
+    </view>
+    <view class="back_item">
+      <view class="item_lable">自提点</view>
+      <view class="item_value">青城国际</view>
+    </view>
+    <view class="back_item">
+      <view class="item_lable">提货地址</view>
+      <view class="item_value">这是提货地址这是提货地址这是提货地址这是提货地址这是</view>
+    </view>
+  </view> -->
+  <!-- 商家配送 -->
+  <view class="back_box padding_lr">
+    <view class="back_item">
+      <view class="item_lable">配送方式</view>
+      <view class="item_value">商家配送</view>
+    </view>
+    <view class="back_item">
+      <view class="item_lable">手机号</view>
+      <view class="item_value blue_style">13864536453</view>
+    </view>
+    <view class="back_item">
+      <view class="item_lable">收货人</view>
+      <view class="item_value">彪子</view>
+    </view>
+    <view class="back_item">
+      <view class="item_lable">收货地址</view>
+      <view class="item_value">这是提货地址这是提货地址这是提货地址这是提货地址这是</view>
+    </view>
+  </view>
+  <view class="back_box">
+    <view class="order_item">
+      <view class="item_top padding_lr">
+        <view class="create_time">订单编号：8748787234657863548</view>
+        <view class="order_status">已完成</view>
+      </view>
+      <view class="order_content padding_lr">
+        <image class="goods_img" mode="aspectFill"
+          src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+        <view class="content_box">
+          <view class="content_box_top">
+            <view class="name_box">
+              <text class="tag">限时</text>
+              <text>各族儿女心相连各族儿女心相连各族儿女心相连各族儿女心相连各族儿女心相连各族儿女心相连各族儿女心相连</text>
+            </view>
+            <view>x1</view>
+          </view>
+          <view class="create_time">¥162.00</view>
+        </view>
+      </view>
+      <view class="order_bottom padding_lr">
+        <view class="create_time">已售后</view>
+        <view class="box_top_left" bindtap="goAfterSales">
+          <text>售后详情</text>
+          <image class="down_icon" src="../../../images/down_icon.png"></image>
+        </view>
+      </view>
+      <view class="back_item padding_lr">
+        <view class="item_lable">运费</view>
+        <view class="item_value">¥0.00</view>
+      </view>
+      <view class="back_item padding_lr">
+        <view class="item_lable">赠送积分</view>
+        <view class="item_value">162积分</view>
+      </view>
+      <view class="back_item padding_lr">
+        <view class="item_lable">实付金额(含运费含税费)</view>
+        <view class="create_time">¥0.00</view>
+      </view>
+      <view class="copy_box">
+        <view class="copy_button">复制详情</view>
+      </view>
+    </view>
+  </view>
+  <view class="back_box order_bottom_info">
+    <view class="order_info_item">买家昵称：哈哈哈</view>
+    <view class="order_info_item">渠道类型：小程序</view>
+    <view class="order_info_item">订单来源：系统内部订单</view>
+    <view class="order_info_item">订单类型：普通订单</view>
+    <view class="order_info_item">销售门店：易购生活</view>
+    <view class="order_info_item">服务门店：易购生活</view>
+    <view class="order_info_item">支付方式：线上支付-无需支付</view>
+    <view class="order_info_item">下单时间：2020-08-20 13:45:34</view>
+    <view class="order_info_item">支付时间：2020-08-20 13:45:34</view>
+  </view>
+</view>

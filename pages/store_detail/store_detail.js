@@ -5,7 +5,9 @@ Page({
   },
   //商家入驻
   goJoin() {
-    console.log("商家入驻");
+    wx.navigateTo({
+      url: '/pages/register_page/register_page'
+    });
   }
 
 })

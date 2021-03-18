@@ -1,0 +1,37 @@
+<!--pages/admin/admin_add_bank/admin_add_bank.wxml-->
+<view class="admin_add_bank">
+  <text class="title">添加银行卡</text>
+  <text class="toast">请绑定持卡人本人的银行卡</text>
+  <view class="bank_item border_top">
+    <view class="item_left">
+      <view class="left_label">持卡人</view>
+      <input class="input" data-type="user_name" bindinput="bindKeyInput"/>
+    </view>
+  </view>
+  <view class="bank_item">
+    <view class="item_left">
+      <view class="left_label">卡号</view>
+      <input class="input" data-type="card_num" type="number" bindinput="bindKeyInput"/>
+    </view>
+  </view>
+  <view class="bank_item">
+    <view class="item_left">
+      <view class="left_label">卡类型</view>
+      <text class="card_text">选择银行和卡类型</text>
+    </view>
+    <image class="down_icon" src="../../../images/down_icon.png"></image>
+  </view>
+  <view class="bank_item">
+    <view class="item_left">
+      <view class="left_label">手机号</view>
+      <input class="input" data-type="phone" type="number" bindinput="bindKeyInput"/>
+    </view>
+  </view>
+  <view class="agreement_row">
+    <image class="radio_icon" src="../../../images/active_radio_icon.png" wx:if="{{is_radio}}" bindtap="checkRadio"></image>
+    <image class="radio_icon" src="../../../images/radio_icon.png" wx:else  bindtap="checkRadio"></image>
+    <text>同意</text>
+    <text class="green_text">《用户协议》</text>
+  </view>
+  <view class="cash_button">提交</view>
+</view>

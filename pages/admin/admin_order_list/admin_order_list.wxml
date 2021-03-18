@@ -1,0 +1,38 @@
+<!--pages/admin/admin_order_list/admin_order_list.wxml-->
+<view class="amdin_order_list">
+  <view class="tab_list">
+    <view class="tab {{active_index == index? 'active_color' : ''}}" wx:for="{{tab_list}}" wx:key="id"
+      data-id="{{item.id}}" data-index="{{index}}" bindtap="changeCurrent">
+      {{item.name}}
+      <view class="active_tab" wx:if="{{active_index == index}}"></view>
+    </view>
+  </view>
+  <view class="order_list">
+    <view class="order_item" wx:for="{{order_list}}" wx:key="status" bindtap="goDetail">
+      <view class="item_top padding_lr">
+        <view class="create_time">下单时间：2021-03-23 13:34:25</view>
+        <view class="order_status">{{item.status}}</view>
+      </view>
+      <view class="order_content padding_lr">
+        <image class="goods_img" mode="aspectFill" src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+        <view class="content_box">
+          <view class="content_box_top">
+            <view class="box_top_left">
+              <view class="tag">限时</view>
+              <view class="name">各族儿女心相连</view>
+            </view>
+            <view>x1</view>
+          </view>
+          <view class="create_time">编号：sku</view>
+        </view>
+      </view>
+      <view class="order_bottom padding_lr">
+        <view class="create_time">到店自提</view>
+        <view class="box_top_left">
+          <text>实收款：</text>
+          <text class="price_text">¥88.00</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

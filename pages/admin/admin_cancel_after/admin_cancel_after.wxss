@@ -1,0 +1,51 @@
+/* pages/admin/admin_cancel_after/admin_cancel_after.wxss */
+page{
+  background-color: #fff;
+}
+.admin_cancel_after{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.input_box{
+  margin-top: 25rpx;
+  border-radius: 8rpx;
+  background-color: #E5E6E8;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  box-sizing: border-box;
+}
+.input{
+  flex:1;
+}
+.admin_scan_icon{
+  margin-left: 15rpx;
+  width: 38rpx;
+  height: 38rpx;
+}
+.record{
+  margin-top: 25rpx;
+  font-size:28rpx;
+  color: #267EF4;
+}
+.search_button{
+  position: absolute;
+  bottom: 30rpx;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 35rpx;
+  background-color: #267EF4;
+  width: 90%;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #fff;
+}

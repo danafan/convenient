@@ -1,0 +1,9 @@
+<!--pages/admin/admin_cancel_after/admin_cancel_after.wxml-->
+<view class="admin_cancel_after">
+  <view class="input_box">
+    <input class="input" bindinput="bindKeyInput" placeholder="请输入优惠券的码值" />
+    <image class="admin_scan_icon" src="../../../images/admin_scan_icon.png"></image>
+  </view>
+  <text class="record">核销记录</text>
+  <view class="search_button">查询</view>
+</view>

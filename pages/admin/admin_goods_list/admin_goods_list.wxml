@@ -1,0 +1,43 @@
+<!--pages/admin/admin_goods_list/admin_goods_list.wxml-->
+<view class="admin_goods_list">
+  <view class="tab_list">
+    <view class="tab {{active_index == index? 'active_color' : ''}}" wx:for="{{tab_list}}" wx:key="id"
+      data-id="{{item.id}}" data-index="{{index}}" bindtap="changeCurrent">
+      {{item.name}}
+      <view class="active_tab" wx:if="{{active_index == index}}"></view>
+    </view>
+  </view>
+  <view class="goods_list">
+    <view class="goods_item" wx:for="{{goods_list}}" wx:key="id">
+      <image class="goods_img" mode="aspectFill"
+          src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+      <view class="goods_content">  
+        <view class="goods_name">自然堂爽肤水自然堂爽肤水自然堂爽肤水</view>
+        <view class="goods_price">售价 ¥128</view>
+        <view class="goods_tool">
+          <text>库存 12</text>
+          <text>销量 0</text>
+          <image class="more_icon" src="../../../images/more_icon.png" data-index="{{index}}" catchtap="checkGoods"></image>
+        </view>
+        <view class="modal_box" wx:if="{{select_goods_index == index}}" bindtap="closeModal">
+          <view class="modal_item">
+            <image class="goods_set" src="../../../images/goods_set_01.png"></image>
+            <view class="modal_label">分享</view>
+          </view>
+          <view class="modal_item">
+            <image class="goods_set" src="../../../images/goods_set_02.png"></image>
+            <view class="modal_label">库存/价格</view>
+          </view>
+          <view class="modal_item">
+            <image class="goods_set" src="../../../images/goods_set_03.png"></image>
+            <view class="modal_label">下架</view>
+          </view>
+          <view class="modal_item">
+            <image class="goods_set" src="../../../images/goods_set_04.png"></image>
+            <view>删除</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

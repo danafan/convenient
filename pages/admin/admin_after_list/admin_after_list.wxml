@@ -1,0 +1,34 @@
+<!--pages/admin/admin_after_list/admin_after_list.wxml-->
+<view class="amdin_order_list">
+  <view class="tab_list">
+    <view class="tab {{active_index == index? 'active_color' : ''}}" wx:for="{{tab_list}}" wx:key="id"
+      data-id="{{item.id}}" data-index="{{index}}" bindtap="changeCurrent">
+      {{item.name}}
+      <view class="active_tab" wx:if="{{active_index == index}}"></view>
+    </view>
+  </view>
+  <view class="order_list">
+    <view class="order_item" wx:for="{{order_list}}" wx:key="status" bindtap="goAfterSales">
+      <view class="item_top padding_lr">
+        <view class="create_time">售后类型：仅退款</view>
+        <view class="order_status">{{item.status}}</view>
+      </view>
+      <view class="order_content padding_lr">
+        <image class="goods_img" mode="aspectFill" src="https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg"></image>
+        <view class="content_box">
+          <view class="name">各族儿女心相连</view>
+          <view class="create_time">x1</view>
+        </view>
+      </view>
+      <view class="order_bottom padding_lr">
+        <view class="copy_button" wx:if="{{item.id == '1'}}">确认收货</view>
+        <view class="copy_button" wx:if="{{item.id == '2'}}">确认退款</view>
+        <!-- 已完成 -->
+        <view class="box_top_left" wx:if="{{item.id == '3'}}">
+          <text>退款金额：</text>
+          <text class="price_text">¥88.00</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

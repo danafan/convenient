@@ -40,7 +40,7 @@
   </view>
   <view class="common_row margin_top">
     <view class="row_label">惠东古交</view>
-    <view class="right_arrow">
+    <view class="right_arrow" bindtap="goStoreDetail">
       <text>进入店铺</text>
       <image class="right_icon" src="../../images/down_icon.png"></image>
     </view>

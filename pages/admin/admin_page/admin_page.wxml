@@ -12,40 +12,40 @@
   </view>
   <view class="size_box"></view>
   <view class="menu_list">
-    <view class="menu_item">
-      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+    <view class="menu_item" bindtap="goCancelAfter">
+      <image class="admin_icon" src="../../../images/admin_icon_01.png"></image>
       <text class="menu_label">活动订单核销</text>
     </view>
-    <view class="menu_item">
-      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
-      <text class="menu_label">申请体现</text>
+    <view class="menu_item" bindtap="goCash">
+      <image class="admin_icon" src="../../../images/admin_icon_01.png"></image>
+      <text class="menu_label">申请提现</text>
     </view>
-    <view class="menu_item">
-      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+    <view class="menu_item" bindtap="goAddBank">
+      <image class="admin_icon" src="../../../images/admin_icon_01.png"></image>
       <text class="menu_label">商家提现账户</text>
     </view>
-    <view class="menu_item">
-      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+    <view class="menu_item" bindtap="goOrderList">
+      <image class="admin_icon" src="../../../images/admin_icon_01.png"></image>
       <text class="menu_label">订单管理</text>
     </view>
-    <view class="menu_item">
-      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+    <view class="menu_item" bindtap="goAfterList">
+      <image class="admin_icon" src="../../../images/admin_icon_01.png"></image>
       <text class="menu_label">售后管理</text>
     </view>
     <view class="menu_item">
-      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <image class="admin_icon" src="../../../images/admin_icon_01.png"></image>
       <text class="menu_label">正在营业</text>
     </view>
-    <view class="menu_item">
-      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+    <view class="menu_item" bindtap="goGoodsList">
+      <image class="admin_icon" src="../../../images/admin_icon_01.png"></image>
       <text class="menu_label">商品管理</text>
     </view>
     <view class="menu_item">
-      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <image class="admin_icon" src="../../../images/admin_icon_01.png"></image>
       <text class="menu_label">客户管理</text>
     </view>
     <view class="menu_item">
-      <image class="admin_icon" src="../../images/admin_icon_01.png"></image>
+      <image class="admin_icon" src="../../../images/admin_icon_01.png"></image>
       <text class="menu_label">骑手提现账户</text>
     </view>
     <view class="menu_item">

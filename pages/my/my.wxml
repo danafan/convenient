@@ -94,7 +94,7 @@
         </view>
         <image class="right_icon" src="../../images/down_icon.png"></image>
       </view>
-      <view class="menu_item bottom_line">
+      <view class="menu_item bottom_line" bindtap="goRegister">
         <view class="menu_left">
           <image class="menu_icon" src="../../images/menu_icon_02.png"></image>
           <view>成为团长</view>

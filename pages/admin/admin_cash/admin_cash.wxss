@@ -1,0 +1,90 @@
+/* pages/admin/admin_cash/admin_cash.wxss */
+page{
+  background-color: #fff;
+}
+.bank_card{
+  background-color: #E8E9E8;
+  padding: 80rpx 50rpx;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+.card_label{
+  margin-right: 30rpx;
+}
+.card_info{
+  flex:1;
+}
+.info_top{
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info_left{
+  display: flex;
+  align-items: center;
+}
+.bank_icon{
+  margin-right: 15rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.bank_name{
+  font-weight: 800;
+}
+.right_icon{
+  transform: rotate(-90deg);
+  width: 30rpx;
+  height: 30rpx;
+}
+.time{
+  font-size: 26rpx;
+  color:#8a8a8a;
+}
+.cash_content{
+  padding: 50rpx;
+  background-color: #fff;
+  position: relative;
+  top: -30rpx;
+  border-radius: 30rpx 30rpx 0 0;
+}
+.cash_title{
+  font-size: 26rpx;
+}
+.input_box{
+  border-bottom: 1rpx solid #E8E9E8;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 20rpx;
+  padding-bottom: 42rpx;
+}
+.money_icon{
+  margin-right: 15rpx;
+  position: relative;
+  top: 10rpx;
+  font-size: 48rpx;
+  font-weight: 600;
+}
+.bottom_toast{
+  margin-top: 15rpx;
+  color: #8a8a8a;
+  font-size: 26rpx;
+}
+.blue_toast{
+  color: #267EF4;
+}
+.cash_button{
+  border-radius: 5rpx;
+  background-color: #5BE06E;
+  position: absolute;
+  right: 50rpx;
+  bottom: 50rpx;
+  width: 200rpx;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: #fff;
+}

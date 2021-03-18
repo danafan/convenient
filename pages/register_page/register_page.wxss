@@ -1,0 +1,74 @@
+/* pages/register_page/register_page.wxss */
+.register_group{
+  font-size: 28rpx;
+}
+.group_title{
+  padding-left: 25rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #8a8a8a;
+}
+.group_content{
+  background-color: #fff;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+}
+.group_item{
+  border-bottom: 1rpx solid #F1F2F4;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item_small_row{
+  display: flex;
+  align-items: center;
+}
+.red_color{
+  color:#E73E43;
+}
+.itme_label{
+  margin-right: 25rpx;
+  width:150rpx;
+}
+.down_icon{
+  transform: rotate(-90deg);
+  width: 30rpx;
+  height: 30rpx;
+}
+.agreement_row{
+  padding-left: 25rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+}
+.radio_icon{
+  margin-right: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.green_text{
+  color:#267EF4;
+}
+.submit_button{
+  margin-bottom: 80rpx;
+  border-radius: 5rpx;
+  background-color: #E62931;
+  width: 700rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  color: #fff;
+  position: relative;
+  left:50%;
+  transform: translate(-50%);
+}
+.go_back{
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #8a8a8a;
+}

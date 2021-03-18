@@ -1,0 +1,28 @@
+<!--pages/admin/admin_cash/admin_cash.wxml-->
+<view class="admin_cash">
+  <view class="bank_card">
+    <view class="card_label">到账银行卡</view>
+    <view class="card_info">
+      <view class="info_top">
+        <view class="info_left">
+          <image class="bank_icon" src="../../../images/menu_icon_01.png"></image>
+          <view class="bank_name">中国工商银行</view>
+        </view>
+        <image class="right_icon" src="../../../images/down_icon.png"></image>
+      </view>
+      <view class="time">2小时内到账</view>
+    </view>
+  </view>
+  <view class="cash_content">
+    <view class="cash_title">提现金额</view>
+    <view class="input_box">
+      <text class="money_icon">¥</text>
+      <input class="input" type="number" bindinput="bindKeyInput" placeholder="请输入提现金额" />
+    </view>
+    <view class="bottom_toast">
+      <text>当前可提现金额388.99元，</text>
+      <text class="blue_toast">全部提现</text>
+    </view>
+  </view>
+  <view class="cash_button">提现</view>
+</view>
